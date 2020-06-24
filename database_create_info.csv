@@ -1,0 +1,33 @@
+TableName,BaseCommand,Regex,ReferenceBuffer,Unit,Result
+CPU ON-DIE thermal sensor,execute sensor list,CPU ON-DIE thermal sensor\s+(\{.(?P<reading>(?:([\d\.]+))|)|),10,C,PASS
+PHY B50182 temp sensor,execute sensor list,PHY B50182 temp sensor\s+(\{.(?P<reading>(?:([\d\.]+))|)|),11,C,PASS
+PHY B50210-#1 temp sensor,execute sensor list,PHY B50210-#1 temp sensor\s+(\{.(?P<reading>(?:([\d\.]+))|)|),12,C,PASS
+PHY B50210-#2 temp sensor,execute sensor list,PHY B50210-#2 temp sensor\s+(\{.(?P<reading>(?:([\d\.]+))|)|),13,C,PASS
+pba_num,diagnose npu np6xlite register,pba_num\s*\=(?P<reading>[0-9a-z]{8})\s*\(,3,Count,ALL
+EXT_Error,$$$BLACKLIST$$$,EXT\d-fs.*error,,,
+Unable to handle kernel,$$$BLACKLIST$$$,Unable to handle kernel,,,
+Failed to allocate resource,$$$BLACKLIST$$$,Failed to allocate resource,,,
+Kernel panic,$$$BLACKLIST$$$,Kernel panic,,,
+Bad certificates in BIOS,$$$BLACKLIST$$$,Bad certificates in BIOS,,,
+unable to set poe power,$$$BLACKLIST$$$,unable to set poe power,,,
+battery hardware is missing or malfunctioning,$$$BLACKLIST$$$,battery hardware is missing or malfunctioning,,,
+Interim,$$$BLACKLIST$$$,Release Version Information:\s*interim,,,
+Oops,$$$BLACKLIST$$$,Oops:,,,
+cmf_query_shm,$$$BLACKLIST$$$,cmf_query_shm,,,
+Internal Error,$$$BLACKLIST$$$,Internal Error,,,
+Wrong message,$$$BLACKLIST$$$,Wrong message,,,
+CRC_ERROR_1,$$$BLACKLIST$$$,crc error,,,
+Hardware Error,$$$BLACKLIST$$$,Hardware Error,,,
+NIC device failure,$$$BLACKLIST$$$,NIC device failure,,,
+auto test fail,$$$BLACKLIST$$$,auto test fail,,,
+interface fatal error,$$$BLACKLIST$$$,interface fatal error,,,
+Reset button has been disabled,$$$BLACKLIST$$$,Reset button has been disabled,,,
+CRC_ERROR_2,$$$BLACKLIST$$$,(?:CRC|crc)_(?:error|Errors)\s*:\s*(?:1\d+|[2-9]\d*),,,
+Time Check,$$$BLACKLIST$$$,System time:[^\n]+\s*(?:[13456789]\d\d\d|2[1-9]\d\d|20[023456789]\d|201[0123456]),,,
+Force a clean power cycle,$$$BLACKLIST$$$,Force a clean power cycle,,,
+Disk Error,$$$BLACKLIST$$$,Error (1\d+|[2-9]|[2-9]\d+) occurred at disk power-on lifetime,,,
+Over Size,$$$BLACKLIST$$$,oversize\s*:(?:[0]+[23456789]+\d*|[23456789]+\d*|1\d+),,,
+NP6XLITE Error,$$$BLACKLIST$$$,NP6XLITE.*Error,,,
+exception Emask,$$$BLACKLIST$$$,ata1.00.*exception Emask,,,
+libips so error,$$$BLACKLIST$$$,libips.so error:/data/lib/libips.so,,,
+ERROR loading soc script on unit 0,$$$BLACKLIST$$$,ERROR loading soc script on unit 0,,,

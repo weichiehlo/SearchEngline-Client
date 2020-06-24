@@ -1,0 +1,105 @@
+15:46:57 INFO select sensor_name from "sensor_to_unit" LIMIT 1 
+15:46:57 INFO SELECT DISTINCT (test_type) from "CPU ON-DIE thermal sensor"
+15:46:57 INFO SELECT table_name FROM INFORMATION_SCHEMA.views WHERE table_schema = ANY (current_schemas(false));
+15:46:57 INFO SELECT MIN(reading) FROM "CPU ON-DIE thermal sensor" WHERE serial_number LIKE 'FGR60F%%' AND test_type = 'ITS'
+15:46:57 INFO SELECT MAX(reading) FROM "CPU ON-DIE thermal sensor" WHERE serial_number LIKE 'FGR60F%%' AND test_type = 'ITS'
+15:46:57 INFO SELECT table_name FROM "main_sensor_graph"
+15:46:57 INFO (psycopg2.errors.UndefinedTable) relation "main_sensor_graph" does not exist
+LINE 1: SELECT table_name FROM "main_sensor_graph"
+                               ^
+
+[SQL: SELECT table_name FROM "main_sensor_graph"]
+(Background on this error at: http://sqlalche.me/e/f405)
+15:46:58 INFO SELECT MIN (mycount) from (select distinct (COUNT(reading)) as mycount from "EXT_Error" WHERE in_log = 'True' AND serial_number LIKE 'FGR60F%%' GROUP BY serial_number, test_date, test_type) AS "Dummy" 
+15:46:58 INFO SELECT MAX (mycount) from (select distinct (COUNT(reading)) as mycount from "EXT_Error" WHERE in_log = 'True' AND serial_number LIKE 'FGR60F%%' GROUP BY serial_number, test_date, test_type) AS "Dummy" 
+15:46:58 INFO SELECT table_name FROM "main_vs_graph"
+15:46:58 INFO (psycopg2.errors.UndefinedTable) relation "main_vs_graph" does not exist
+LINE 1: SELECT table_name FROM "main_vs_graph"
+                               ^
+
+[SQL: SELECT table_name FROM "main_vs_graph"]
+(Background on this error at: http://sqlalche.me/e/f405)
+15:46:58 INFO select sensor_name from "sensor_to_unit" LIMIT 1 
+15:46:58 INFO SELECT DISTINCT (test_type) from "CPU ON-DIE thermal sensor"
+15:46:58 INFO SELECT table_name FROM "main_vs_graph"
+15:46:58 INFO (psycopg2.errors.UndefinedTable) relation "main_vs_graph" does not exist
+LINE 1: SELECT table_name FROM "main_vs_graph"
+                               ^
+
+[SQL: SELECT table_name FROM "main_vs_graph"]
+(Background on this error at: http://sqlalche.me/e/f405)
+15:46:59 INFO select sensor_name from "sensor_to_unit" LIMIT 1 
+15:46:59 INFO SELECT DISTINCT (test_type) from "CPU ON-DIE thermal sensor"
+15:46:59 INFO SELECT MIN(reading) FROM "CPU ON-DIE thermal sensor" WHERE serial_number LIKE 'FGR60F%%' AND test_type = 'ITS'
+15:46:59 INFO SELECT MAX(reading) FROM "CPU ON-DIE thermal sensor" WHERE serial_number LIKE 'FGR60F%%' AND test_type = 'ITS'
+15:46:59 INFO SELECT MIN(reading) FROM "CPU ON-DIE thermal sensor" WHERE serial_number LIKE 'FGR60F%%' AND test_type = 'ITS'
+15:46:59 INFO SELECT MAX(reading) FROM "CPU ON-DIE thermal sensor" WHERE serial_number LIKE 'FGR60F%%' AND test_type = 'ITS'
+15:47:04 INFO SELECT MIN(reading) FROM "PHY B50182 temp sensor" WHERE serial_number LIKE 'FGR60F%%' AND test_type = 'ITS'
+15:47:04 INFO SELECT MAX(reading) FROM "PHY B50182 temp sensor" WHERE serial_number LIKE 'FGR60F%%' AND test_type = 'ITS'
+15:47:05 INFO SELECT MIN(reading) FROM "PHY B50210-#1 temp sensor" WHERE serial_number LIKE 'FGR60F%%' AND test_type = 'ITS'
+15:47:05 INFO SELECT MAX(reading) FROM "PHY B50210-#1 temp sensor" WHERE serial_number LIKE 'FGR60F%%' AND test_type = 'ITS'
+15:47:05 INFO SELECT MIN(reading) FROM "PHY B50210-#2 temp sensor" WHERE serial_number LIKE 'FGR60F%%' AND test_type = 'ITS'
+15:47:05 INFO SELECT MAX(reading) FROM "PHY B50210-#2 temp sensor" WHERE serial_number LIKE 'FGR60F%%' AND test_type = 'ITS'
+11:59:01 INFO select sensor_name from "sensor_to_unit" LIMIT 1 
+11:59:01 INFO SELECT DISTINCT (test_type) from "CPU ON-DIE thermal sensor"
+11:59:01 INFO SELECT table_name FROM INFORMATION_SCHEMA.views WHERE table_schema = ANY (current_schemas(false));
+11:59:01 INFO SELECT MIN(reading) FROM "CPU ON-DIE thermal sensor" WHERE serial_number LIKE 'FGR60F%%' AND test_type = 'ITS'
+11:59:01 INFO SELECT MAX(reading) FROM "CPU ON-DIE thermal sensor" WHERE serial_number LIKE 'FGR60F%%' AND test_type = 'ITS'
+11:59:01 INFO SELECT table_name FROM "main_sensor_graph"
+11:59:01 INFO (psycopg2.errors.UndefinedTable) relation "main_sensor_graph" does not exist
+LINE 1: SELECT table_name FROM "main_sensor_graph"
+                               ^
+
+[SQL: SELECT table_name FROM "main_sensor_graph"]
+(Background on this error at: http://sqlalche.me/e/f405)
+11:59:02 INFO SELECT MIN (mycount) from (select distinct (COUNT(reading)) as mycount from "EXT_Error" WHERE in_log = 'True' AND serial_number LIKE 'FGR60F%%' GROUP BY serial_number, test_date, test_type) AS "Dummy" 
+11:59:02 INFO SELECT MAX (mycount) from (select distinct (COUNT(reading)) as mycount from "EXT_Error" WHERE in_log = 'True' AND serial_number LIKE 'FGR60F%%' GROUP BY serial_number, test_date, test_type) AS "Dummy" 
+11:59:02 INFO SELECT table_name FROM "main_vs_graph"
+11:59:02 INFO (psycopg2.errors.UndefinedTable) relation "main_vs_graph" does not exist
+LINE 1: SELECT table_name FROM "main_vs_graph"
+                               ^
+
+[SQL: SELECT table_name FROM "main_vs_graph"]
+(Background on this error at: http://sqlalche.me/e/f405)
+11:59:02 INFO select sensor_name from "sensor_to_unit" LIMIT 1 
+11:59:02 INFO SELECT DISTINCT (test_type) from "CPU ON-DIE thermal sensor"
+11:59:02 INFO SELECT table_name FROM "main_vs_graph"
+11:59:02 INFO (psycopg2.errors.UndefinedTable) relation "main_vs_graph" does not exist
+LINE 1: SELECT table_name FROM "main_vs_graph"
+                               ^
+
+[SQL: SELECT table_name FROM "main_vs_graph"]
+(Background on this error at: http://sqlalche.me/e/f405)
+11:59:03 INFO select sensor_name from "sensor_to_unit" LIMIT 1 
+11:59:03 INFO SELECT DISTINCT (test_type) from "CPU ON-DIE thermal sensor"
+11:59:03 INFO SELECT MIN(reading) FROM "CPU ON-DIE thermal sensor" WHERE serial_number LIKE 'FGR60F%%' AND test_type = 'ITS'
+11:59:03 INFO SELECT MAX(reading) FROM "CPU ON-DIE thermal sensor" WHERE serial_number LIKE 'FGR60F%%' AND test_type = 'ITS'
+11:59:03 INFO SELECT MIN(reading) FROM "CPU ON-DIE thermal sensor" WHERE serial_number LIKE 'FGR60F%%' AND test_type = 'ITS'
+11:59:03 INFO SELECT MAX(reading) FROM "CPU ON-DIE thermal sensor" WHERE serial_number LIKE 'FGR60F%%' AND test_type = 'ITS'
+11:59:21 INFO SELECT "CPU ON-DIE thermal sensor".serial_number AS "Serial Number","CPU ON-DIE thermal sensor".test_date, "CPU ON-DIE thermal sensor".test_type, "CPU ON-DIE thermal sensor".line_number AS "CPU ON-DIE thermal sensor_Line_Number","CPU ON-DIE thermal sensor".alarm AS "CPU ON-DIE thermal sensor_Alarm","CPU ON-DIE thermal sensor".reading AS "CPU ON-DIE thermal sensor_Reading"FROM "CPU ON-DIE thermal sensor" WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".test_date >= '1999-01-01 00:00:00' AND "CPU ON-DIE thermal sensor".test_date <= '2020-06-08 23:59:59'AND "CPU ON-DIE thermal sensor".test_type = 'ITS'AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%'ORDER BY reading
+16:10:20 INFO select sensor_name from "sensor_to_unit" LIMIT 1 
+16:10:20 INFO SELECT DISTINCT (test_type) from "CPU ON-DIE thermal sensor"
+16:10:20 INFO SELECT table_name FROM INFORMATION_SCHEMA.views WHERE table_schema = ANY (current_schemas(false));
+16:10:20 INFO SELECT MIN(reading) FROM "CPU ON-DIE thermal sensor" WHERE serial_number LIKE 'FGR60F%%' AND test_type = 'ITS'
+16:10:20 INFO SELECT MAX(reading) FROM "CPU ON-DIE thermal sensor" WHERE serial_number LIKE 'FGR60F%%' AND test_type = 'ITS'
+16:10:20 INFO SELECT table_name FROM "main_sensor_graph"
+16:10:20 INFO (psycopg2.errors.UndefinedTable) relation "main_sensor_graph" does not exist
+LINE 1: SELECT table_name FROM "main_sensor_graph"
+                               ^
+
+[SQL: SELECT table_name FROM "main_sensor_graph"]
+(Background on this error at: http://sqlalche.me/e/f405)
+16:10:20 INFO SELECT MIN (mycount) from (select distinct (COUNT(reading)) as mycount from "EXT_Error" WHERE in_log = 'True' AND serial_number LIKE 'FGR60F%%' GROUP BY serial_number, test_date, test_type) AS "Dummy" 
+16:10:21 INFO SELECT MAX (mycount) from (select distinct (COUNT(reading)) as mycount from "EXT_Error" WHERE in_log = 'True' AND serial_number LIKE 'FGR60F%%' GROUP BY serial_number, test_date, test_type) AS "Dummy" 
+16:10:21 INFO SELECT table_name FROM "main_vs_graph"
+16:10:21 INFO select sensor_name from "sensor_to_unit" LIMIT 1 
+16:10:21 INFO SELECT DISTINCT (test_type) from "CPU ON-DIE thermal sensor"
+16:10:21 INFO SELECT table_name FROM "main_vs_graph"
+16:10:21 INFO select sensor_name from "sensor_to_unit" LIMIT 1 
+16:10:21 INFO SELECT DISTINCT (test_type) from "CPU ON-DIE thermal sensor"
+16:10:21 INFO SELECT MIN(reading) FROM "CPU ON-DIE thermal sensor" WHERE serial_number LIKE 'FGR60F%%' AND test_type = 'ITS'
+16:10:21 INFO SELECT MAX(reading) FROM "CPU ON-DIE thermal sensor" WHERE serial_number LIKE 'FGR60F%%' AND test_type = 'ITS'
+16:10:21 INFO SELECT MIN(reading) FROM "CPU ON-DIE thermal sensor" WHERE serial_number LIKE 'FGR60F%%' AND test_type = 'ITS'
+16:10:21 INFO SELECT MAX(reading) FROM "CPU ON-DIE thermal sensor" WHERE serial_number LIKE 'FGR60F%%' AND test_type = 'ITS'
+16:10:55 INFO SELECT * FROM "CPU ON-DIE thermal sensor_VS_PHY B50182 temp sensor_All";
+16:10:55 INFO SELECT COLUMN_NAME FROM information_schema.COLUMNS WHERE TABLE_NAME = 'CPU ON-DIE thermal sensor_VS_PHY B50182 temp sensor_All';

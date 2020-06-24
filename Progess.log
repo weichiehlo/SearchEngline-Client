@@ -1,0 +1,1040 @@
+15:49:56 INFO select sensor_name from "sensor_to_unit" LIMIT 1 
+15:49:56 INFO SELECT DISTINCT (test_type) from "PS2 Temp 1"
+15:49:56 INFO SELECT table_name FROM INFORMATION_SCHEMA.views WHERE table_schema = ANY (current_schemas(false));
+15:49:56 INFO SELECT MIN(reading) FROM "PS2 Temp 1" WHERE serial_number LIKE 'FG180F%%' AND test_type = 'ITS'
+15:49:56 INFO SELECT MAX(reading) FROM "PS2 Temp 1" WHERE serial_number LIKE 'FG180F%%' AND test_type = 'ITS'
+15:49:56 INFO SELECT table_name FROM "main_sensor_graph"
+15:49:57 INFO SELECT MIN (mycount) from (select distinct (COUNT(reading)) as mycount from "EXT_Error" WHERE in_log = 'True' AND serial_number LIKE 'FG180F%%' GROUP BY serial_number, test_date, test_type) AS "Dummy" 
+15:49:57 INFO SELECT MAX (mycount) from (select distinct (COUNT(reading)) as mycount from "EXT_Error" WHERE in_log = 'True' AND serial_number LIKE 'FG180F%%' GROUP BY serial_number, test_date, test_type) AS "Dummy" 
+15:49:57 INFO SELECT table_name FROM "main_vs_graph"
+15:49:57 INFO select sensor_name from "sensor_to_unit" LIMIT 1 
+15:49:57 INFO SELECT DISTINCT (test_type) from "PS2 Temp 1"
+15:49:57 INFO SELECT table_name FROM "main_vs_graph"
+15:49:57 INFO select sensor_name from "sensor_to_unit" LIMIT 1 
+15:49:57 INFO SELECT DISTINCT (test_type) from "PS2 Temp 1"
+15:49:57 INFO SELECT MIN(reading) FROM "PS2 Temp 1" WHERE serial_number LIKE 'FG180F%%' AND test_type = 'ITS'
+15:49:57 INFO SELECT MAX(reading) FROM "PS2 Temp 1" WHERE serial_number LIKE 'FG180F%%' AND test_type = 'ITS'
+15:49:57 INFO SELECT MIN(reading) FROM "PS2 Temp 1" WHERE serial_number LIKE 'FG180F%%' AND test_type = 'ITS'
+15:49:57 INFO SELECT MAX(reading) FROM "PS2 Temp 1" WHERE serial_number LIKE 'FG180F%%' AND test_type = 'ITS'
+15:55:22 INFO select sensor_name from "sensor_to_unit" LIMIT 1 
+15:55:22 INFO SELECT DISTINCT (test_type) from "PS2 Temp 1"
+15:55:22 INFO SELECT table_name FROM INFORMATION_SCHEMA.views WHERE table_schema = ANY (current_schemas(false));
+15:55:22 INFO SELECT MIN(reading) FROM "PS2 Temp 1" WHERE serial_number LIKE 'FG180F%%' AND test_type = 'ITS'
+15:55:22 INFO SELECT MAX(reading) FROM "PS2 Temp 1" WHERE serial_number LIKE 'FG180F%%' AND test_type = 'ITS'
+15:55:22 INFO SELECT table_name FROM "main_sensor_graph"
+15:55:23 INFO SELECT MIN (mycount) from (select distinct (COUNT(reading)) as mycount from "EXT_Error" WHERE in_log = 'True' AND serial_number LIKE 'FG180F%%' GROUP BY serial_number, test_date, test_type) AS "Dummy" 
+15:55:23 INFO SELECT MAX (mycount) from (select distinct (COUNT(reading)) as mycount from "EXT_Error" WHERE in_log = 'True' AND serial_number LIKE 'FG180F%%' GROUP BY serial_number, test_date, test_type) AS "Dummy" 
+15:55:23 INFO SELECT table_name FROM "main_vs_graph"
+15:55:23 INFO select sensor_name from "sensor_to_unit" LIMIT 1 
+15:55:23 INFO SELECT DISTINCT (test_type) from "PS2 Temp 1"
+15:55:23 INFO SELECT table_name FROM "main_vs_graph"
+15:55:23 INFO select sensor_name from "sensor_to_unit" LIMIT 1 
+15:55:23 INFO SELECT DISTINCT (test_type) from "PS2 Temp 1"
+15:55:23 INFO SELECT MIN(reading) FROM "PS2 Temp 1" WHERE serial_number LIKE 'FG180F%%' AND test_type = 'ITS'
+15:55:23 INFO SELECT MAX(reading) FROM "PS2 Temp 1" WHERE serial_number LIKE 'FG180F%%' AND test_type = 'ITS'
+15:55:23 INFO SELECT MIN(reading) FROM "PS2 Temp 1" WHERE serial_number LIKE 'FG180F%%' AND test_type = 'ITS'
+15:55:23 INFO SELECT MAX(reading) FROM "PS2 Temp 1" WHERE serial_number LIKE 'FG180F%%' AND test_type = 'ITS'
+15:59:36 INFO select sensor_name from "sensor_to_unit" LIMIT 1 
+15:59:36 INFO (psycopg2.errors.UndefinedTable) relation "sensor_to_unit" does not exist
+LINE 1: select sensor_name from "sensor_to_unit" LIMIT 1 
+                                ^
+
+[SQL: select sensor_name from "sensor_to_unit" LIMIT 1 ]
+(Background on this error at: http://sqlalche.me/e/f405)
+15:59:36 INFO SELECT table_name FROM INFORMATION_SCHEMA.views WHERE table_schema = ANY (current_schemas(false));
+15:59:36 INFO SELECT MIN(reading) FROM "No Table Selected" WHERE serial_number LIKE '%%'
+15:59:36 INFO (psycopg2.errors.UndefinedTable) relation "No Table Selected" does not exist
+LINE 1: SELECT MIN(reading) FROM "No Table Selected" WHERE serial_nu...
+                                 ^
+
+[SQL: SELECT MIN(reading) FROM "No Table Selected" WHERE serial_number LIKE '%%']
+(Background on this error at: http://sqlalche.me/e/f405)
+15:59:36 INFO SELECT MAX(reading) FROM "No Table Selected" WHERE serial_number LIKE '%%' 
+15:59:36 INFO (psycopg2.errors.UndefinedTable) relation "No Table Selected" does not exist
+LINE 1: SELECT MAX(reading) FROM "No Table Selected" WHERE serial_nu...
+                                 ^
+
+[SQL: SELECT MAX(reading) FROM "No Table Selected" WHERE serial_number LIKE '%%' ]
+(Background on this error at: http://sqlalche.me/e/f405)
+15:59:36 INFO SELECT table_name FROM "main_sensor_graph"
+15:59:36 INFO (psycopg2.errors.UndefinedTable) relation "main_sensor_graph" does not exist
+LINE 1: SELECT table_name FROM "main_sensor_graph"
+                               ^
+
+[SQL: SELECT table_name FROM "main_sensor_graph"]
+(Background on this error at: http://sqlalche.me/e/f405)
+15:59:36 ERROR (psycopg2.errors.UndefinedTable) relation "main_blacklist" does not exist
+LINE 1: SELECT name FROM "main_blacklist" 
+                         ^
+
+[SQL: SELECT name FROM "main_blacklist" ]
+(Background on this error at: http://sqlalche.me/e/f405)
+15:59:36 INFO SELECT MIN (mycount) from (select distinct (COUNT(reading)) as mycount from "No Table Selected" WHERE in_log = 'True' AND serial_number LIKE '%%' GROUP BY serial_number, test_date, test_type) AS "Dummy" 
+15:59:36 INFO (psycopg2.errors.UndefinedTable) relation "No Table Selected" does not exist
+LINE 1: ...(select distinct (COUNT(reading)) as mycount from "No Table ...
+                                                             ^
+
+[SQL: SELECT MIN (mycount) from (select distinct (COUNT(reading)) as mycount from "No Table Selected" WHERE in_log = 'True' AND serial_number LIKE '%%' GROUP BY serial_number, test_date, test_type) AS "Dummy" ]
+(Background on this error at: http://sqlalche.me/e/f405)
+15:59:36 INFO SELECT table_name FROM "main_vs_graph"
+15:59:36 INFO (psycopg2.errors.UndefinedTable) relation "main_vs_graph" does not exist
+LINE 1: SELECT table_name FROM "main_vs_graph"
+                               ^
+
+[SQL: SELECT table_name FROM "main_vs_graph"]
+(Background on this error at: http://sqlalche.me/e/f405)
+15:59:36 INFO select sensor_name from "sensor_to_unit" LIMIT 1 
+15:59:36 INFO (psycopg2.errors.UndefinedTable) relation "sensor_to_unit" does not exist
+LINE 1: select sensor_name from "sensor_to_unit" LIMIT 1 
+                                ^
+
+[SQL: select sensor_name from "sensor_to_unit" LIMIT 1 ]
+(Background on this error at: http://sqlalche.me/e/f405)
+15:59:36 INFO SELECT table_name FROM "main_vs_graph"
+15:59:36 INFO (psycopg2.errors.UndefinedTable) relation "main_vs_graph" does not exist
+LINE 1: SELECT table_name FROM "main_vs_graph"
+                               ^
+
+[SQL: SELECT table_name FROM "main_vs_graph"]
+(Background on this error at: http://sqlalche.me/e/f405)
+15:59:36 INFO select sensor_name from "sensor_to_unit" LIMIT 1 
+15:59:36 INFO (psycopg2.errors.UndefinedTable) relation "sensor_to_unit" does not exist
+LINE 1: select sensor_name from "sensor_to_unit" LIMIT 1 
+                                ^
+
+[SQL: select sensor_name from "sensor_to_unit" LIMIT 1 ]
+(Background on this error at: http://sqlalche.me/e/f405)
+15:59:36 INFO SELECT MIN(reading) FROM "No Table Selected" WHERE serial_number LIKE '%%'
+15:59:36 INFO (psycopg2.errors.UndefinedTable) relation "No Table Selected" does not exist
+LINE 1: SELECT MIN(reading) FROM "No Table Selected" WHERE serial_nu...
+                                 ^
+
+[SQL: SELECT MIN(reading) FROM "No Table Selected" WHERE serial_number LIKE '%%']
+(Background on this error at: http://sqlalche.me/e/f405)
+15:59:36 INFO SELECT MAX(reading) FROM "No Table Selected" WHERE serial_number LIKE '%%' 
+15:59:36 INFO (psycopg2.errors.UndefinedTable) relation "No Table Selected" does not exist
+LINE 1: SELECT MAX(reading) FROM "No Table Selected" WHERE serial_nu...
+                                 ^
+
+[SQL: SELECT MAX(reading) FROM "No Table Selected" WHERE serial_number LIKE '%%' ]
+(Background on this error at: http://sqlalche.me/e/f405)
+15:59:36 INFO SELECT MIN(reading) FROM "No Table Selected" WHERE serial_number LIKE '%%'
+15:59:36 INFO (psycopg2.errors.UndefinedTable) relation "No Table Selected" does not exist
+LINE 1: SELECT MIN(reading) FROM "No Table Selected" WHERE serial_nu...
+                                 ^
+
+[SQL: SELECT MIN(reading) FROM "No Table Selected" WHERE serial_number LIKE '%%']
+(Background on this error at: http://sqlalche.me/e/f405)
+15:59:36 INFO SELECT MAX(reading) FROM "No Table Selected" WHERE serial_number LIKE '%%' 
+15:59:36 INFO (psycopg2.errors.UndefinedTable) relation "No Table Selected" does not exist
+LINE 1: SELECT MAX(reading) FROM "No Table Selected" WHERE serial_nu...
+                                 ^
+
+[SQL: SELECT MAX(reading) FROM "No Table Selected" WHERE serial_number LIKE '%%' ]
+(Background on this error at: http://sqlalche.me/e/f405)
+16:00:23 INFO SELECT MIN(reading) FROM "" WHERE serial_number LIKE 'FG180F%%'
+16:00:23 INFO (psycopg2.errors.SyntaxError) zero-length delimited identifier at or near """"
+LINE 1: SELECT MIN(reading) FROM "" WHERE serial_number LIKE 'FG180F...
+                                 ^
+
+[SQL: SELECT MIN(reading) FROM "" WHERE serial_number LIKE 'FG180F%%']
+(Background on this error at: http://sqlalche.me/e/f405)
+16:00:23 INFO SELECT MAX(reading) FROM "" WHERE serial_number LIKE 'FG180F%%' 
+16:00:23 INFO (psycopg2.errors.SyntaxError) zero-length delimited identifier at or near """"
+LINE 1: SELECT MAX(reading) FROM "" WHERE serial_number LIKE 'FG180F...
+                                 ^
+
+[SQL: SELECT MAX(reading) FROM "" WHERE serial_number LIKE 'FG180F%%' ]
+(Background on this error at: http://sqlalche.me/e/f405)
+16:00:23 INFO SELECT MIN(reading) FROM "PS2 Temp 1" WHERE serial_number LIKE 'FG180F%%'
+16:00:23 INFO SELECT MAX(reading) FROM "PS2 Temp 1" WHERE serial_number LIKE 'FG180F%%' 
+16:00:23 INFO select sensor_name from "sensor_to_unit" LIMIT 1 
+16:00:23 INFO SELECT DISTINCT (test_type) from "PS2 Temp 1"
+16:00:23 INFO SELECT MIN(reading) FROM "PS2 Temp 1" WHERE serial_number LIKE 'FG180F%%' AND test_type = ''
+16:00:23 INFO SELECT MAX(reading) FROM "PS2 Temp 1" WHERE serial_number LIKE 'FG180F%%' AND test_type = ''
+16:00:23 INFO SELECT MIN(reading) FROM "PS2 Temp 1" WHERE serial_number LIKE 'FG180F%%' AND test_type = 'ITS'
+16:00:23 INFO SELECT MAX(reading) FROM "PS2 Temp 1" WHERE serial_number LIKE 'FG180F%%' AND test_type = 'ITS'
+16:00:23 INFO SELECT table_name FROM "main_sensor_graph"
+16:00:23 INFO (psycopg2.errors.UndefinedTable) relation "main_sensor_graph" does not exist
+LINE 1: SELECT table_name FROM "main_sensor_graph"
+                               ^
+
+[SQL: SELECT table_name FROM "main_sensor_graph"]
+(Background on this error at: http://sqlalche.me/e/f405)
+16:00:23 INFO SELECT MIN (mycount) from (select distinct (COUNT(reading)) as mycount from "" WHERE in_log = 'True' AND serial_number LIKE 'FG180F%%' GROUP BY serial_number, test_date, test_type) AS "Dummy" 
+16:00:23 INFO (psycopg2.errors.SyntaxError) zero-length delimited identifier at or near """"
+LINE 1: ...(select distinct (COUNT(reading)) as mycount from "" WHERE i...
+                                                             ^
+
+[SQL: SELECT MIN (mycount) from (select distinct (COUNT(reading)) as mycount from "" WHERE in_log = 'True' AND serial_number LIKE 'FG180F%%' GROUP BY serial_number, test_date, test_type) AS "Dummy" ]
+(Background on this error at: http://sqlalche.me/e/f405)
+16:00:23 INFO SELECT MIN (mycount) from (select distinct (COUNT(reading)) as mycount from "EXT_Error" WHERE in_log = 'True' AND serial_number LIKE 'FG180F%%' GROUP BY serial_number, test_date, test_type) AS "Dummy" 
+16:00:23 INFO SELECT MAX (mycount) from (select distinct (COUNT(reading)) as mycount from "EXT_Error" WHERE in_log = 'True' AND serial_number LIKE 'FG180F%%' GROUP BY serial_number, test_date, test_type) AS "Dummy" 
+16:00:23 INFO select sensor_name from "sensor_to_unit" LIMIT 1 
+16:00:23 INFO SELECT DISTINCT (test_type) from "PS2 Temp 1"
+16:00:23 INFO SELECT table_name FROM "main_vs_graph"
+16:00:23 INFO (psycopg2.errors.UndefinedTable) relation "main_vs_graph" does not exist
+LINE 1: SELECT table_name FROM "main_vs_graph"
+                               ^
+
+[SQL: SELECT table_name FROM "main_vs_graph"]
+(Background on this error at: http://sqlalche.me/e/f405)
+16:00:23 INFO SELECT MIN(reading) FROM "" WHERE serial_number LIKE 'FG180F%%'
+16:00:23 INFO (psycopg2.errors.SyntaxError) zero-length delimited identifier at or near """"
+LINE 1: SELECT MIN(reading) FROM "" WHERE serial_number LIKE 'FG180F...
+                                 ^
+
+[SQL: SELECT MIN(reading) FROM "" WHERE serial_number LIKE 'FG180F%%']
+(Background on this error at: http://sqlalche.me/e/f405)
+16:00:23 INFO SELECT MAX(reading) FROM "" WHERE serial_number LIKE 'FG180F%%' 
+16:00:23 INFO (psycopg2.errors.SyntaxError) zero-length delimited identifier at or near """"
+LINE 1: SELECT MAX(reading) FROM "" WHERE serial_number LIKE 'FG180F...
+                                 ^
+
+[SQL: SELECT MAX(reading) FROM "" WHERE serial_number LIKE 'FG180F%%' ]
+(Background on this error at: http://sqlalche.me/e/f405)
+16:00:23 INFO SELECT MIN(reading) FROM "PS2 Temp 1" WHERE serial_number LIKE 'FG180F%%'
+16:00:23 INFO SELECT MAX(reading) FROM "PS2 Temp 1" WHERE serial_number LIKE 'FG180F%%' 
+16:00:23 INFO SELECT MIN(reading) FROM "" WHERE serial_number LIKE 'FG180F%%'
+16:00:23 INFO (psycopg2.errors.SyntaxError) zero-length delimited identifier at or near """"
+LINE 1: SELECT MIN(reading) FROM "" WHERE serial_number LIKE 'FG180F...
+                                 ^
+
+[SQL: SELECT MIN(reading) FROM "" WHERE serial_number LIKE 'FG180F%%']
+(Background on this error at: http://sqlalche.me/e/f405)
+16:00:23 INFO SELECT MAX(reading) FROM "" WHERE serial_number LIKE 'FG180F%%' 
+16:00:23 INFO (psycopg2.errors.SyntaxError) zero-length delimited identifier at or near """"
+LINE 1: SELECT MAX(reading) FROM "" WHERE serial_number LIKE 'FG180F...
+                                 ^
+
+[SQL: SELECT MAX(reading) FROM "" WHERE serial_number LIKE 'FG180F%%' ]
+(Background on this error at: http://sqlalche.me/e/f405)
+16:00:23 INFO SELECT MIN(reading) FROM "PS2 Temp 1" WHERE serial_number LIKE 'FG180F%%'
+16:00:23 INFO SELECT MAX(reading) FROM "PS2 Temp 1" WHERE serial_number LIKE 'FG180F%%' 
+16:00:23 INFO select sensor_name from "sensor_to_unit" LIMIT 1 
+16:00:23 INFO SELECT DISTINCT (test_type) from "PS2 Temp 1"
+16:00:23 INFO SELECT MIN(reading) FROM "PS2 Temp 1" WHERE serial_number LIKE 'FG180F%%' AND test_type = ''
+16:00:23 INFO SELECT MAX(reading) FROM "PS2 Temp 1" WHERE serial_number LIKE 'FG180F%%' AND test_type = ''
+16:00:23 INFO SELECT MIN(reading) FROM "PS2 Temp 1" WHERE serial_number LIKE 'FG180F%%' AND test_type = ''
+16:00:23 INFO SELECT MAX(reading) FROM "PS2 Temp 1" WHERE serial_number LIKE 'FG180F%%' AND test_type = ''
+16:00:23 INFO SELECT MIN(reading) FROM "PS2 Temp 1" WHERE serial_number LIKE 'FG180F%%' AND test_type = 'ITS'
+16:00:23 INFO SELECT MAX(reading) FROM "PS2 Temp 1" WHERE serial_number LIKE 'FG180F%%' AND test_type = 'ITS'
+16:00:23 INFO SELECT MIN(reading) FROM "PS2 Temp 1" WHERE serial_number LIKE 'FG180F%%' AND test_type = 'ITS'
+16:00:23 INFO SELECT MAX(reading) FROM "PS2 Temp 1" WHERE serial_number LIKE 'FG180F%%' AND test_type = 'ITS'
+11:10:02 INFO select sensor_name from "sensor_to_unit" LIMIT 1 
+11:10:02 INFO SELECT DISTINCT (test_type) from "PS2 Temp 1"
+11:10:02 INFO SELECT table_name FROM INFORMATION_SCHEMA.views WHERE table_schema = ANY (current_schemas(false));
+11:10:02 INFO SELECT MIN(reading) FROM "PS2 Temp 1" WHERE serial_number LIKE 'FG180F%%' AND test_type = 'ITS'
+11:10:02 INFO SELECT MAX(reading) FROM "PS2 Temp 1" WHERE serial_number LIKE 'FG180F%%' AND test_type = 'ITS'
+11:10:02 INFO SELECT table_name FROM "main_sensor_graph"
+11:10:02 INFO (psycopg2.errors.UndefinedTable) relation "main_sensor_graph" does not exist
+LINE 1: SELECT table_name FROM "main_sensor_graph"
+                               ^
+
+[SQL: SELECT table_name FROM "main_sensor_graph"]
+(Background on this error at: http://sqlalche.me/e/f405)
+11:10:02 INFO SELECT MIN (mycount) from (select distinct (COUNT(reading)) as mycount from "EXT_Error" WHERE in_log = 'True' AND serial_number LIKE 'FG180F%%' GROUP BY serial_number, test_date, test_type) AS "Dummy" 
+11:10:03 INFO SELECT MAX (mycount) from (select distinct (COUNT(reading)) as mycount from "EXT_Error" WHERE in_log = 'True' AND serial_number LIKE 'FG180F%%' GROUP BY serial_number, test_date, test_type) AS "Dummy" 
+11:10:03 INFO SELECT table_name FROM "main_vs_graph"
+11:10:03 INFO (psycopg2.errors.UndefinedTable) relation "main_vs_graph" does not exist
+LINE 1: SELECT table_name FROM "main_vs_graph"
+                               ^
+
+[SQL: SELECT table_name FROM "main_vs_graph"]
+(Background on this error at: http://sqlalche.me/e/f405)
+11:10:03 INFO select sensor_name from "sensor_to_unit" LIMIT 1 
+11:10:03 INFO SELECT DISTINCT (test_type) from "PS2 Temp 1"
+11:10:03 INFO SELECT table_name FROM "main_vs_graph"
+11:10:03 INFO (psycopg2.errors.UndefinedTable) relation "main_vs_graph" does not exist
+LINE 1: SELECT table_name FROM "main_vs_graph"
+                               ^
+
+[SQL: SELECT table_name FROM "main_vs_graph"]
+(Background on this error at: http://sqlalche.me/e/f405)
+11:10:04 INFO select sensor_name from "sensor_to_unit" LIMIT 1 
+11:10:04 INFO SELECT DISTINCT (test_type) from "PS2 Temp 1"
+11:10:04 INFO SELECT MIN(reading) FROM "PS2 Temp 1" WHERE serial_number LIKE 'FG180F%%' AND test_type = 'ITS'
+11:10:04 INFO SELECT MAX(reading) FROM "PS2 Temp 1" WHERE serial_number LIKE 'FG180F%%' AND test_type = 'ITS'
+11:10:04 INFO SELECT MIN(reading) FROM "PS2 Temp 1" WHERE serial_number LIKE 'FG180F%%' AND test_type = 'ITS'
+11:10:04 INFO SELECT MAX(reading) FROM "PS2 Temp 1" WHERE serial_number LIKE 'FG180F%%' AND test_type = 'ITS'
+11:10:21 INFO SELECT MIN(reading) FROM "NP7_DDR_VTT45_AD" WHERE serial_number LIKE 'FG180F%%' AND test_type = 'ITS'
+11:10:21 INFO SELECT MAX(reading) FROM "NP7_DDR_VTT45_AD" WHERE serial_number LIKE 'FG180F%%' AND test_type = 'ITS'
+11:10:21 INFO SELECT MIN(reading) FROM "BCM 0 Core Temp" WHERE serial_number LIKE 'FG180F%%' AND test_type = 'ITS'
+11:10:21 INFO SELECT MAX(reading) FROM "BCM 0 Core Temp" WHERE serial_number LIKE 'FG180F%%' AND test_type = 'ITS'
+11:10:21 INFO SELECT MIN(reading) FROM "PWR_VTT_F" WHERE serial_number LIKE 'FG180F%%' AND test_type = 'ITS'
+11:10:21 INFO SELECT MAX(reading) FROM "PWR_VTT_F" WHERE serial_number LIKE 'FG180F%%' AND test_type = 'ITS'
+11:10:22 INFO SELECT MIN(reading) FROM "PHY B50185->P17_P24" WHERE serial_number LIKE 'FG180F%%' AND test_type = 'ITS'
+11:10:22 INFO SELECT MAX(reading) FROM "PHY B50185->P17_P24" WHERE serial_number LIKE 'FG180F%%' AND test_type = 'ITS'
+11:10:22 INFO SELECT MIN(reading) FROM "PVNN PCH AUX" WHERE serial_number LIKE 'FG180F%%' AND test_type = 'ITS'
+11:10:22 INFO SELECT MAX(reading) FROM "PVNN PCH AUX" WHERE serial_number LIKE 'FG180F%%' AND test_type = 'ITS'
+11:10:22 INFO SELECT MIN(reading) FROM "3.3V_CP9" WHERE serial_number LIKE 'FG180F%%' AND test_type = 'ITS'
+11:10:22 INFO SELECT MAX(reading) FROM "3.3V_CP9" WHERE serial_number LIKE 'FG180F%%' AND test_type = 'ITS'
+11:10:22 INFO SELECT MIN(reading) FROM "Fan 3" WHERE serial_number LIKE 'FG180F%%' AND test_type = 'ITS'
+11:10:22 INFO SELECT MAX(reading) FROM "Fan 3" WHERE serial_number LIKE 'FG180F%%' AND test_type = 'ITS'
+11:10:23 INFO SELECT MIN(reading) FROM "3.3V_CP9" WHERE serial_number LIKE 'FG180F%%' AND test_type = 'ITS'
+11:10:23 INFO SELECT MAX(reading) FROM "3.3V_CP9" WHERE serial_number LIKE 'FG180F%%' AND test_type = 'ITS'
+11:10:23 INFO SELECT MIN(reading) FROM "PVNN PCH AUX" WHERE serial_number LIKE 'FG180F%%' AND test_type = 'ITS'
+11:10:23 INFO SELECT MAX(reading) FROM "PVNN PCH AUX" WHERE serial_number LIKE 'FG180F%%' AND test_type = 'ITS'
+11:10:24 INFO SELECT MIN(reading) FROM "PVDDQ DEF IOUT" WHERE serial_number LIKE 'FG180F%%' AND test_type = 'ITS'
+11:10:24 INFO SELECT MAX(reading) FROM "PVDDQ DEF IOUT" WHERE serial_number LIKE 'FG180F%%' AND test_type = 'ITS'
+11:10:25 INFO SELECT MIN(reading) FROM "PS1 Temp 3" WHERE serial_number LIKE 'FG180F%%' AND test_type = 'ITS'
+11:10:25 INFO SELECT MAX(reading) FROM "PS1 Temp 3" WHERE serial_number LIKE 'FG180F%%' AND test_type = 'ITS'
+11:10:25 INFO SELECT MIN(reading) FROM "PVDDQ ABC Temp" WHERE serial_number LIKE 'FG180F%%' AND test_type = 'ITS'
+11:10:25 INFO SELECT MAX(reading) FROM "PVDDQ ABC Temp" WHERE serial_number LIKE 'FG180F%%' AND test_type = 'ITS'
+11:10:27 INFO SELECT MIN(reading) FROM "PS2 Temp 2" WHERE serial_number LIKE 'FG180F%%' AND test_type = 'ITS'
+11:10:27 INFO SELECT MAX(reading) FROM "PS2 Temp 2" WHERE serial_number LIKE 'FG180F%%' AND test_type = 'ITS'
+11:10:27 INFO SELECT MIN(reading) FROM "PWR_VTT_DE" WHERE serial_number LIKE 'FG180F%%' AND test_type = 'ITS'
+11:10:27 INFO SELECT MAX(reading) FROM "PWR_VTT_DE" WHERE serial_number LIKE 'FG180F%%' AND test_type = 'ITS'
+11:10:32 INFO SELECT MIN(reading) FROM "PS2 Temp 1" WHERE serial_number LIKE 'FG180F%%' AND test_type = 'ITS'
+11:10:32 INFO SELECT MAX(reading) FROM "PS2 Temp 1" WHERE serial_number LIKE 'FG180F%%' AND test_type = 'ITS'
+11:10:34 INFO SELECT MIN(reading) FROM "PWR_VTT_F" WHERE serial_number LIKE 'FG180F%%' AND test_type = 'ITS'
+11:10:34 INFO SELECT MAX(reading) FROM "PWR_VTT_F" WHERE serial_number LIKE 'FG180F%%' AND test_type = 'ITS'
+11:10:35 INFO SELECT MIN(reading) FROM "PHY B50185->P17_P24" WHERE serial_number LIKE 'FG180F%%' AND test_type = 'ITS'
+11:10:35 INFO SELECT MAX(reading) FROM "PHY B50185->P17_P24" WHERE serial_number LIKE 'FG180F%%' AND test_type = 'ITS'
+11:10:35 INFO SELECT MIN(reading) FROM "PVNN PCH AUX" WHERE serial_number LIKE 'FG180F%%' AND test_type = 'ITS'
+11:10:35 INFO SELECT MAX(reading) FROM "PVNN PCH AUX" WHERE serial_number LIKE 'FG180F%%' AND test_type = 'ITS'
+11:10:37 INFO SELECT MIN(reading) FROM "PVDDQ DEF IOUT" WHERE serial_number LIKE 'FG180F%%' AND test_type = 'ITS'
+11:10:37 INFO SELECT MAX(reading) FROM "PVDDQ DEF IOUT" WHERE serial_number LIKE 'FG180F%%' AND test_type = 'ITS'
+11:10:37 INFO SELECT MIN(reading) FROM "PS1 Temp 3" WHERE serial_number LIKE 'FG180F%%' AND test_type = 'ITS'
+11:10:37 INFO SELECT MAX(reading) FROM "PS1 Temp 3" WHERE serial_number LIKE 'FG180F%%' AND test_type = 'ITS'
+11:10:38 INFO SELECT MIN(reading) FROM "PVDDQ ABC Temp" WHERE serial_number LIKE 'FG180F%%' AND test_type = 'ITS'
+11:10:38 INFO SELECT MAX(reading) FROM "PVDDQ ABC Temp" WHERE serial_number LIKE 'FG180F%%' AND test_type = 'ITS'
+11:10:38 INFO SELECT MIN(reading) FROM "PS2 Temp 2" WHERE serial_number LIKE 'FG180F%%' AND test_type = 'ITS'
+11:10:38 INFO SELECT MAX(reading) FROM "PS2 Temp 2" WHERE serial_number LIKE 'FG180F%%' AND test_type = 'ITS'
+11:10:39 INFO SELECT MIN(reading) FROM "PWR_VTT_DE" WHERE serial_number LIKE 'FG180F%%' AND test_type = 'ITS'
+11:10:39 INFO SELECT MAX(reading) FROM "PWR_VTT_DE" WHERE serial_number LIKE 'FG180F%%' AND test_type = 'ITS'
+11:14:40 INFO select sensor_name from "sensor_to_unit" LIMIT 1 
+11:14:40 INFO SELECT DISTINCT (test_type) from "PS2 Temp 1"
+11:14:40 INFO SELECT table_name FROM INFORMATION_SCHEMA.views WHERE table_schema = ANY (current_schemas(false));
+11:14:40 INFO SELECT MIN(reading) FROM "3.3V_CP9" WHERE serial_number LIKE 'FG180F%%' AND test_type = 'ITS'
+11:14:40 INFO SELECT MAX(reading) FROM "3.3V_CP9" WHERE serial_number LIKE 'FG180F%%' AND test_type = 'ITS'
+11:14:40 INFO SELECT table_name FROM "main_sensor_graph"
+11:14:40 INFO (psycopg2.errors.UndefinedTable) relation "main_sensor_graph" does not exist
+LINE 1: SELECT table_name FROM "main_sensor_graph"
+                               ^
+
+[SQL: SELECT table_name FROM "main_sensor_graph"]
+(Background on this error at: http://sqlalche.me/e/f405)
+11:14:40 INFO SELECT MIN (mycount) from (select distinct (COUNT(reading)) as mycount from "EXT_Error" WHERE in_log = 'True' AND serial_number LIKE 'FG180F%%' GROUP BY serial_number, test_date, test_type) AS "Dummy" 
+11:14:40 INFO SELECT MAX (mycount) from (select distinct (COUNT(reading)) as mycount from "EXT_Error" WHERE in_log = 'True' AND serial_number LIKE 'FG180F%%' GROUP BY serial_number, test_date, test_type) AS "Dummy" 
+11:14:40 INFO SELECT table_name FROM "main_vs_graph"
+11:14:40 INFO (psycopg2.errors.UndefinedTable) relation "main_vs_graph" does not exist
+LINE 1: SELECT table_name FROM "main_vs_graph"
+                               ^
+
+[SQL: SELECT table_name FROM "main_vs_graph"]
+(Background on this error at: http://sqlalche.me/e/f405)
+11:14:40 INFO select sensor_name from "sensor_to_unit" LIMIT 1 
+11:14:40 INFO SELECT DISTINCT (test_type) from "PS2 Temp 1"
+11:14:40 INFO SELECT table_name FROM "main_vs_graph"
+11:14:40 INFO (psycopg2.errors.UndefinedTable) relation "main_vs_graph" does not exist
+LINE 1: SELECT table_name FROM "main_vs_graph"
+                               ^
+
+[SQL: SELECT table_name FROM "main_vs_graph"]
+(Background on this error at: http://sqlalche.me/e/f405)
+11:14:40 INFO select sensor_name from "sensor_to_unit" LIMIT 1 
+11:14:40 INFO SELECT DISTINCT (test_type) from "PS2 Temp 1"
+11:14:40 INFO SELECT MIN(reading) FROM "3.3V_CP9" WHERE serial_number LIKE 'FG180F%%' AND test_type = 'ITS'
+11:14:40 INFO SELECT MAX(reading) FROM "3.3V_CP9" WHERE serial_number LIKE 'FG180F%%' AND test_type = 'ITS'
+11:14:40 INFO SELECT MIN(reading) FROM "3.3V_CP9" WHERE serial_number LIKE 'FG180F%%' AND test_type = 'ITS'
+11:14:40 INFO SELECT MAX(reading) FROM "3.3V_CP9" WHERE serial_number LIKE 'FG180F%%' AND test_type = 'ITS'
+11:14:52 INFO SELECT MIN(reading) FROM "NP7 Core Temp" WHERE serial_number LIKE 'FG180F%%' AND test_type = 'ITS'
+11:14:52 INFO SELECT MAX(reading) FROM "NP7 Core Temp" WHERE serial_number LIKE 'FG180F%%' AND test_type = 'ITS'
+15:31:03 INFO select sensor_name from "sensor_to_unit" LIMIT 1 
+15:31:03 INFO SELECT DISTINCT (test_type) from "CPU ON-DIE thermal sensor"
+15:31:03 INFO SELECT table_name FROM INFORMATION_SCHEMA.views WHERE table_schema = ANY (current_schemas(false));
+15:31:03 INFO SELECT MIN(reading) FROM "CPU ON-DIE thermal sensor" WHERE serial_number LIKE 'FGR60F%%' AND test_type = 'ITS'
+15:31:03 INFO SELECT MAX(reading) FROM "CPU ON-DIE thermal sensor" WHERE serial_number LIKE 'FGR60F%%' AND test_type = 'ITS'
+15:31:03 INFO SELECT table_name FROM "main_sensor_graph"
+15:31:03 INFO (psycopg2.errors.UndefinedTable) relation "main_sensor_graph" does not exist
+LINE 1: SELECT table_name FROM "main_sensor_graph"
+                               ^
+
+[SQL: SELECT table_name FROM "main_sensor_graph"]
+(Background on this error at: http://sqlalche.me/e/f405)
+15:31:03 INFO SELECT MIN (mycount) from (select distinct (COUNT(reading)) as mycount from "EXT_Error" WHERE in_log = 'True' AND serial_number LIKE 'FGR60F%%' GROUP BY serial_number, test_date, test_type) AS "Dummy" 
+15:31:04 INFO SELECT MAX (mycount) from (select distinct (COUNT(reading)) as mycount from "EXT_Error" WHERE in_log = 'True' AND serial_number LIKE 'FGR60F%%' GROUP BY serial_number, test_date, test_type) AS "Dummy" 
+15:31:04 INFO SELECT table_name FROM "main_vs_graph"
+15:31:04 INFO (psycopg2.errors.UndefinedTable) relation "main_vs_graph" does not exist
+LINE 1: SELECT table_name FROM "main_vs_graph"
+                               ^
+
+[SQL: SELECT table_name FROM "main_vs_graph"]
+(Background on this error at: http://sqlalche.me/e/f405)
+15:31:04 INFO select sensor_name from "sensor_to_unit" LIMIT 1 
+15:31:04 INFO SELECT DISTINCT (test_type) from "CPU ON-DIE thermal sensor"
+15:31:04 INFO SELECT table_name FROM "main_vs_graph"
+15:31:04 INFO (psycopg2.errors.UndefinedTable) relation "main_vs_graph" does not exist
+LINE 1: SELECT table_name FROM "main_vs_graph"
+                               ^
+
+[SQL: SELECT table_name FROM "main_vs_graph"]
+(Background on this error at: http://sqlalche.me/e/f405)
+15:31:04 INFO select sensor_name from "sensor_to_unit" LIMIT 1 
+15:31:04 INFO SELECT DISTINCT (test_type) from "CPU ON-DIE thermal sensor"
+15:31:04 INFO SELECT MIN(reading) FROM "CPU ON-DIE thermal sensor" WHERE serial_number LIKE 'FGR60F%%' AND test_type = 'ITS'
+15:31:04 INFO SELECT MAX(reading) FROM "CPU ON-DIE thermal sensor" WHERE serial_number LIKE 'FGR60F%%' AND test_type = 'ITS'
+15:31:04 INFO SELECT MIN(reading) FROM "CPU ON-DIE thermal sensor" WHERE serial_number LIKE 'FGR60F%%' AND test_type = 'ITS'
+15:31:04 INFO SELECT MAX(reading) FROM "CPU ON-DIE thermal sensor" WHERE serial_number LIKE 'FGR60F%%' AND test_type = 'ITS'
+15:32:02 INFO SELECT MIN(reading) FROM "PHY B50210-#2 temp sensor" WHERE serial_number LIKE 'FGR60F%%' AND test_type = 'ITS'
+15:32:02 INFO SELECT MAX(reading) FROM "PHY B50210-#2 temp sensor" WHERE serial_number LIKE 'FGR60F%%' AND test_type = 'ITS'
+15:32:09 INFO SELECT MIN(reading) FROM "PHY B50182 temp sensor" WHERE serial_number LIKE 'FGR60F%%' AND test_type = 'ITS'
+15:32:10 INFO SELECT MAX(reading) FROM "PHY B50182 temp sensor" WHERE serial_number LIKE 'FGR60F%%' AND test_type = 'ITS'
+15:32:10 INFO SELECT MIN(reading) FROM "PHY B50210-#1 temp sensor" WHERE serial_number LIKE 'FGR60F%%' AND test_type = 'ITS'
+15:32:10 INFO SELECT MAX(reading) FROM "PHY B50210-#1 temp sensor" WHERE serial_number LIKE 'FGR60F%%' AND test_type = 'ITS'
+15:32:10 INFO SELECT MIN(reading) FROM "PHY B50210-#2 temp sensor" WHERE serial_number LIKE 'FGR60F%%' AND test_type = 'ITS'
+15:32:10 INFO SELECT MAX(reading) FROM "PHY B50210-#2 temp sensor" WHERE serial_number LIKE 'FGR60F%%' AND test_type = 'ITS'
+15:32:10 INFO SELECT MIN(reading) FROM "pba_num" WHERE serial_number LIKE 'FGR60F%%' AND test_type = 'ITS'
+15:32:10 INFO SELECT MAX(reading) FROM "pba_num" WHERE serial_number LIKE 'FGR60F%%' AND test_type = 'ITS'
+15:32:14 INFO SELECT MIN(reading) FROM "CPU ON-DIE thermal sensor" WHERE serial_number LIKE 'FGR60F%%' AND test_type = 'ITS'
+15:32:14 INFO SELECT MAX(reading) FROM "CPU ON-DIE thermal sensor" WHERE serial_number LIKE 'FGR60F%%' AND test_type = 'ITS'
+15:32:17 INFO SELECT MIN(reading) FROM "PHY B50210-#1 temp sensor" WHERE serial_number LIKE 'FGR60F%%' AND test_type = 'ITS'
+15:32:17 INFO SELECT MAX(reading) FROM "PHY B50210-#1 temp sensor" WHERE serial_number LIKE 'FGR60F%%' AND test_type = 'ITS'
+15:32:24 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 25.91AND "CPU ON-DIE thermal sensor".reading < 30.91AND "PHY B50210-#1 temp sensor".reading >= 25.19AND "PHY B50210-#1 temp sensor".reading < 30.19
+15:32:25 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 25.91AND "CPU ON-DIE thermal sensor".reading < 30.91AND "PHY B50210-#1 temp sensor".reading >= 30.19AND "PHY B50210-#1 temp sensor".reading < 35.19
+15:32:25 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 25.91AND "CPU ON-DIE thermal sensor".reading < 30.91AND "PHY B50210-#1 temp sensor".reading >= 35.19AND "PHY B50210-#1 temp sensor".reading < 40.19
+15:32:25 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 25.91AND "CPU ON-DIE thermal sensor".reading < 30.91AND "PHY B50210-#1 temp sensor".reading >= 40.19AND "PHY B50210-#1 temp sensor".reading < 45.19
+15:32:25 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 25.91AND "CPU ON-DIE thermal sensor".reading < 30.91AND "PHY B50210-#1 temp sensor".reading >= 45.19AND "PHY B50210-#1 temp sensor".reading < 50.19
+15:32:25 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 25.91AND "CPU ON-DIE thermal sensor".reading < 30.91AND "PHY B50210-#1 temp sensor".reading >= 50.19AND "PHY B50210-#1 temp sensor".reading < 55.19
+15:32:25 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 25.91AND "CPU ON-DIE thermal sensor".reading < 30.91AND "PHY B50210-#1 temp sensor".reading >= 55.19AND "PHY B50210-#1 temp sensor".reading < 60.19
+15:32:25 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 25.91AND "CPU ON-DIE thermal sensor".reading < 30.91AND "PHY B50210-#1 temp sensor".reading >= 60.19AND "PHY B50210-#1 temp sensor".reading < 65.19
+15:32:25 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 25.91AND "CPU ON-DIE thermal sensor".reading < 30.91AND "PHY B50210-#1 temp sensor".reading >= 65.19AND "PHY B50210-#1 temp sensor".reading < 70.19
+15:32:25 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 25.91AND "CPU ON-DIE thermal sensor".reading < 30.91AND "PHY B50210-#1 temp sensor".reading >= 70.19AND "PHY B50210-#1 temp sensor".reading < 75.19
+15:32:25 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 25.91AND "CPU ON-DIE thermal sensor".reading < 30.91AND "PHY B50210-#1 temp sensor".reading >= 75.19AND "PHY B50210-#1 temp sensor".reading < 80.19
+15:32:25 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 30.91AND "CPU ON-DIE thermal sensor".reading < 35.91AND "PHY B50210-#1 temp sensor".reading >= 25.19AND "PHY B50210-#1 temp sensor".reading < 30.19
+15:32:25 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 30.91AND "CPU ON-DIE thermal sensor".reading < 35.91AND "PHY B50210-#1 temp sensor".reading >= 30.19AND "PHY B50210-#1 temp sensor".reading < 35.19
+15:32:25 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 30.91AND "CPU ON-DIE thermal sensor".reading < 35.91AND "PHY B50210-#1 temp sensor".reading >= 35.19AND "PHY B50210-#1 temp sensor".reading < 40.19
+15:32:25 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 30.91AND "CPU ON-DIE thermal sensor".reading < 35.91AND "PHY B50210-#1 temp sensor".reading >= 40.19AND "PHY B50210-#1 temp sensor".reading < 45.19
+15:32:25 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 30.91AND "CPU ON-DIE thermal sensor".reading < 35.91AND "PHY B50210-#1 temp sensor".reading >= 45.19AND "PHY B50210-#1 temp sensor".reading < 50.19
+15:32:25 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 30.91AND "CPU ON-DIE thermal sensor".reading < 35.91AND "PHY B50210-#1 temp sensor".reading >= 50.19AND "PHY B50210-#1 temp sensor".reading < 55.19
+15:32:25 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 30.91AND "CPU ON-DIE thermal sensor".reading < 35.91AND "PHY B50210-#1 temp sensor".reading >= 55.19AND "PHY B50210-#1 temp sensor".reading < 60.19
+15:32:25 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 30.91AND "CPU ON-DIE thermal sensor".reading < 35.91AND "PHY B50210-#1 temp sensor".reading >= 60.19AND "PHY B50210-#1 temp sensor".reading < 65.19
+15:32:25 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 30.91AND "CPU ON-DIE thermal sensor".reading < 35.91AND "PHY B50210-#1 temp sensor".reading >= 65.19AND "PHY B50210-#1 temp sensor".reading < 70.19
+15:32:25 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 30.91AND "CPU ON-DIE thermal sensor".reading < 35.91AND "PHY B50210-#1 temp sensor".reading >= 70.19AND "PHY B50210-#1 temp sensor".reading < 75.19
+15:32:25 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 30.91AND "CPU ON-DIE thermal sensor".reading < 35.91AND "PHY B50210-#1 temp sensor".reading >= 75.19AND "PHY B50210-#1 temp sensor".reading < 80.19
+15:32:25 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 35.91AND "CPU ON-DIE thermal sensor".reading < 40.91AND "PHY B50210-#1 temp sensor".reading >= 25.19AND "PHY B50210-#1 temp sensor".reading < 30.19
+15:32:25 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 35.91AND "CPU ON-DIE thermal sensor".reading < 40.91AND "PHY B50210-#1 temp sensor".reading >= 30.19AND "PHY B50210-#1 temp sensor".reading < 35.19
+15:32:25 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 35.91AND "CPU ON-DIE thermal sensor".reading < 40.91AND "PHY B50210-#1 temp sensor".reading >= 35.19AND "PHY B50210-#1 temp sensor".reading < 40.19
+15:32:25 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 35.91AND "CPU ON-DIE thermal sensor".reading < 40.91AND "PHY B50210-#1 temp sensor".reading >= 40.19AND "PHY B50210-#1 temp sensor".reading < 45.19
+15:32:25 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 35.91AND "CPU ON-DIE thermal sensor".reading < 40.91AND "PHY B50210-#1 temp sensor".reading >= 45.19AND "PHY B50210-#1 temp sensor".reading < 50.19
+15:32:25 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 35.91AND "CPU ON-DIE thermal sensor".reading < 40.91AND "PHY B50210-#1 temp sensor".reading >= 50.19AND "PHY B50210-#1 temp sensor".reading < 55.19
+15:32:25 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 35.91AND "CPU ON-DIE thermal sensor".reading < 40.91AND "PHY B50210-#1 temp sensor".reading >= 55.19AND "PHY B50210-#1 temp sensor".reading < 60.19
+15:32:25 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 35.91AND "CPU ON-DIE thermal sensor".reading < 40.91AND "PHY B50210-#1 temp sensor".reading >= 60.19AND "PHY B50210-#1 temp sensor".reading < 65.19
+15:32:25 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 35.91AND "CPU ON-DIE thermal sensor".reading < 40.91AND "PHY B50210-#1 temp sensor".reading >= 65.19AND "PHY B50210-#1 temp sensor".reading < 70.19
+15:32:25 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 35.91AND "CPU ON-DIE thermal sensor".reading < 40.91AND "PHY B50210-#1 temp sensor".reading >= 70.19AND "PHY B50210-#1 temp sensor".reading < 75.19
+15:32:25 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 35.91AND "CPU ON-DIE thermal sensor".reading < 40.91AND "PHY B50210-#1 temp sensor".reading >= 75.19AND "PHY B50210-#1 temp sensor".reading < 80.19
+15:32:25 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 40.91AND "CPU ON-DIE thermal sensor".reading < 45.91AND "PHY B50210-#1 temp sensor".reading >= 25.19AND "PHY B50210-#1 temp sensor".reading < 30.19
+15:32:25 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 40.91AND "CPU ON-DIE thermal sensor".reading < 45.91AND "PHY B50210-#1 temp sensor".reading >= 30.19AND "PHY B50210-#1 temp sensor".reading < 35.19
+15:32:25 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 40.91AND "CPU ON-DIE thermal sensor".reading < 45.91AND "PHY B50210-#1 temp sensor".reading >= 35.19AND "PHY B50210-#1 temp sensor".reading < 40.19
+15:32:25 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 40.91AND "CPU ON-DIE thermal sensor".reading < 45.91AND "PHY B50210-#1 temp sensor".reading >= 40.19AND "PHY B50210-#1 temp sensor".reading < 45.19
+15:32:25 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 40.91AND "CPU ON-DIE thermal sensor".reading < 45.91AND "PHY B50210-#1 temp sensor".reading >= 45.19AND "PHY B50210-#1 temp sensor".reading < 50.19
+15:32:25 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 40.91AND "CPU ON-DIE thermal sensor".reading < 45.91AND "PHY B50210-#1 temp sensor".reading >= 50.19AND "PHY B50210-#1 temp sensor".reading < 55.19
+15:32:25 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 40.91AND "CPU ON-DIE thermal sensor".reading < 45.91AND "PHY B50210-#1 temp sensor".reading >= 55.19AND "PHY B50210-#1 temp sensor".reading < 60.19
+15:32:25 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 40.91AND "CPU ON-DIE thermal sensor".reading < 45.91AND "PHY B50210-#1 temp sensor".reading >= 60.19AND "PHY B50210-#1 temp sensor".reading < 65.19
+15:32:25 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 40.91AND "CPU ON-DIE thermal sensor".reading < 45.91AND "PHY B50210-#1 temp sensor".reading >= 65.19AND "PHY B50210-#1 temp sensor".reading < 70.19
+15:32:25 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 40.91AND "CPU ON-DIE thermal sensor".reading < 45.91AND "PHY B50210-#1 temp sensor".reading >= 70.19AND "PHY B50210-#1 temp sensor".reading < 75.19
+15:32:25 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 40.91AND "CPU ON-DIE thermal sensor".reading < 45.91AND "PHY B50210-#1 temp sensor".reading >= 75.19AND "PHY B50210-#1 temp sensor".reading < 80.19
+15:32:25 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 45.91AND "CPU ON-DIE thermal sensor".reading < 50.91AND "PHY B50210-#1 temp sensor".reading >= 25.19AND "PHY B50210-#1 temp sensor".reading < 30.19
+15:32:25 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 45.91AND "CPU ON-DIE thermal sensor".reading < 50.91AND "PHY B50210-#1 temp sensor".reading >= 30.19AND "PHY B50210-#1 temp sensor".reading < 35.19
+15:32:25 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 45.91AND "CPU ON-DIE thermal sensor".reading < 50.91AND "PHY B50210-#1 temp sensor".reading >= 35.19AND "PHY B50210-#1 temp sensor".reading < 40.19
+15:32:25 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 45.91AND "CPU ON-DIE thermal sensor".reading < 50.91AND "PHY B50210-#1 temp sensor".reading >= 40.19AND "PHY B50210-#1 temp sensor".reading < 45.19
+15:32:25 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 45.91AND "CPU ON-DIE thermal sensor".reading < 50.91AND "PHY B50210-#1 temp sensor".reading >= 45.19AND "PHY B50210-#1 temp sensor".reading < 50.19
+15:32:25 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 45.91AND "CPU ON-DIE thermal sensor".reading < 50.91AND "PHY B50210-#1 temp sensor".reading >= 50.19AND "PHY B50210-#1 temp sensor".reading < 55.19
+15:32:25 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 45.91AND "CPU ON-DIE thermal sensor".reading < 50.91AND "PHY B50210-#1 temp sensor".reading >= 55.19AND "PHY B50210-#1 temp sensor".reading < 60.19
+15:32:25 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 45.91AND "CPU ON-DIE thermal sensor".reading < 50.91AND "PHY B50210-#1 temp sensor".reading >= 60.19AND "PHY B50210-#1 temp sensor".reading < 65.19
+15:32:25 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 45.91AND "CPU ON-DIE thermal sensor".reading < 50.91AND "PHY B50210-#1 temp sensor".reading >= 65.19AND "PHY B50210-#1 temp sensor".reading < 70.19
+15:32:25 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 45.91AND "CPU ON-DIE thermal sensor".reading < 50.91AND "PHY B50210-#1 temp sensor".reading >= 70.19AND "PHY B50210-#1 temp sensor".reading < 75.19
+15:32:25 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 45.91AND "CPU ON-DIE thermal sensor".reading < 50.91AND "PHY B50210-#1 temp sensor".reading >= 75.19AND "PHY B50210-#1 temp sensor".reading < 80.19
+15:32:25 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 50.91AND "CPU ON-DIE thermal sensor".reading < 55.91AND "PHY B50210-#1 temp sensor".reading >= 25.19AND "PHY B50210-#1 temp sensor".reading < 30.19
+15:32:25 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 50.91AND "CPU ON-DIE thermal sensor".reading < 55.91AND "PHY B50210-#1 temp sensor".reading >= 30.19AND "PHY B50210-#1 temp sensor".reading < 35.19
+15:32:25 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 50.91AND "CPU ON-DIE thermal sensor".reading < 55.91AND "PHY B50210-#1 temp sensor".reading >= 35.19AND "PHY B50210-#1 temp sensor".reading < 40.19
+15:32:25 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 50.91AND "CPU ON-DIE thermal sensor".reading < 55.91AND "PHY B50210-#1 temp sensor".reading >= 40.19AND "PHY B50210-#1 temp sensor".reading < 45.19
+15:32:25 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 50.91AND "CPU ON-DIE thermal sensor".reading < 55.91AND "PHY B50210-#1 temp sensor".reading >= 45.19AND "PHY B50210-#1 temp sensor".reading < 50.19
+15:32:25 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 50.91AND "CPU ON-DIE thermal sensor".reading < 55.91AND "PHY B50210-#1 temp sensor".reading >= 50.19AND "PHY B50210-#1 temp sensor".reading < 55.19
+15:32:25 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 50.91AND "CPU ON-DIE thermal sensor".reading < 55.91AND "PHY B50210-#1 temp sensor".reading >= 55.19AND "PHY B50210-#1 temp sensor".reading < 60.19
+15:32:25 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 50.91AND "CPU ON-DIE thermal sensor".reading < 55.91AND "PHY B50210-#1 temp sensor".reading >= 60.19AND "PHY B50210-#1 temp sensor".reading < 65.19
+15:32:25 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 50.91AND "CPU ON-DIE thermal sensor".reading < 55.91AND "PHY B50210-#1 temp sensor".reading >= 65.19AND "PHY B50210-#1 temp sensor".reading < 70.19
+15:32:25 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 50.91AND "CPU ON-DIE thermal sensor".reading < 55.91AND "PHY B50210-#1 temp sensor".reading >= 70.19AND "PHY B50210-#1 temp sensor".reading < 75.19
+15:32:25 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 50.91AND "CPU ON-DIE thermal sensor".reading < 55.91AND "PHY B50210-#1 temp sensor".reading >= 75.19AND "PHY B50210-#1 temp sensor".reading < 80.19
+15:32:25 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 55.91AND "CPU ON-DIE thermal sensor".reading < 60.91AND "PHY B50210-#1 temp sensor".reading >= 25.19AND "PHY B50210-#1 temp sensor".reading < 30.19
+15:32:25 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 55.91AND "CPU ON-DIE thermal sensor".reading < 60.91AND "PHY B50210-#1 temp sensor".reading >= 30.19AND "PHY B50210-#1 temp sensor".reading < 35.19
+15:32:25 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 55.91AND "CPU ON-DIE thermal sensor".reading < 60.91AND "PHY B50210-#1 temp sensor".reading >= 35.19AND "PHY B50210-#1 temp sensor".reading < 40.19
+15:32:25 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 55.91AND "CPU ON-DIE thermal sensor".reading < 60.91AND "PHY B50210-#1 temp sensor".reading >= 40.19AND "PHY B50210-#1 temp sensor".reading < 45.19
+15:32:25 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 55.91AND "CPU ON-DIE thermal sensor".reading < 60.91AND "PHY B50210-#1 temp sensor".reading >= 45.19AND "PHY B50210-#1 temp sensor".reading < 50.19
+15:32:25 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 55.91AND "CPU ON-DIE thermal sensor".reading < 60.91AND "PHY B50210-#1 temp sensor".reading >= 50.19AND "PHY B50210-#1 temp sensor".reading < 55.19
+15:32:25 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 55.91AND "CPU ON-DIE thermal sensor".reading < 60.91AND "PHY B50210-#1 temp sensor".reading >= 55.19AND "PHY B50210-#1 temp sensor".reading < 60.19
+15:32:25 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 55.91AND "CPU ON-DIE thermal sensor".reading < 60.91AND "PHY B50210-#1 temp sensor".reading >= 60.19AND "PHY B50210-#1 temp sensor".reading < 65.19
+15:32:25 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 55.91AND "CPU ON-DIE thermal sensor".reading < 60.91AND "PHY B50210-#1 temp sensor".reading >= 65.19AND "PHY B50210-#1 temp sensor".reading < 70.19
+15:32:25 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 55.91AND "CPU ON-DIE thermal sensor".reading < 60.91AND "PHY B50210-#1 temp sensor".reading >= 70.19AND "PHY B50210-#1 temp sensor".reading < 75.19
+15:32:25 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 55.91AND "CPU ON-DIE thermal sensor".reading < 60.91AND "PHY B50210-#1 temp sensor".reading >= 75.19AND "PHY B50210-#1 temp sensor".reading < 80.19
+15:32:25 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 60.91AND "CPU ON-DIE thermal sensor".reading < 65.91AND "PHY B50210-#1 temp sensor".reading >= 25.19AND "PHY B50210-#1 temp sensor".reading < 30.19
+15:32:25 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 60.91AND "CPU ON-DIE thermal sensor".reading < 65.91AND "PHY B50210-#1 temp sensor".reading >= 30.19AND "PHY B50210-#1 temp sensor".reading < 35.19
+15:32:25 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 60.91AND "CPU ON-DIE thermal sensor".reading < 65.91AND "PHY B50210-#1 temp sensor".reading >= 35.19AND "PHY B50210-#1 temp sensor".reading < 40.19
+15:32:25 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 60.91AND "CPU ON-DIE thermal sensor".reading < 65.91AND "PHY B50210-#1 temp sensor".reading >= 40.19AND "PHY B50210-#1 temp sensor".reading < 45.19
+15:32:25 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 60.91AND "CPU ON-DIE thermal sensor".reading < 65.91AND "PHY B50210-#1 temp sensor".reading >= 45.19AND "PHY B50210-#1 temp sensor".reading < 50.19
+15:32:25 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 60.91AND "CPU ON-DIE thermal sensor".reading < 65.91AND "PHY B50210-#1 temp sensor".reading >= 50.19AND "PHY B50210-#1 temp sensor".reading < 55.19
+15:32:25 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 60.91AND "CPU ON-DIE thermal sensor".reading < 65.91AND "PHY B50210-#1 temp sensor".reading >= 55.19AND "PHY B50210-#1 temp sensor".reading < 60.19
+15:32:25 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 60.91AND "CPU ON-DIE thermal sensor".reading < 65.91AND "PHY B50210-#1 temp sensor".reading >= 60.19AND "PHY B50210-#1 temp sensor".reading < 65.19
+15:32:25 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 60.91AND "CPU ON-DIE thermal sensor".reading < 65.91AND "PHY B50210-#1 temp sensor".reading >= 65.19AND "PHY B50210-#1 temp sensor".reading < 70.19
+15:32:25 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 60.91AND "CPU ON-DIE thermal sensor".reading < 65.91AND "PHY B50210-#1 temp sensor".reading >= 70.19AND "PHY B50210-#1 temp sensor".reading < 75.19
+15:32:25 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 60.91AND "CPU ON-DIE thermal sensor".reading < 65.91AND "PHY B50210-#1 temp sensor".reading >= 75.19AND "PHY B50210-#1 temp sensor".reading < 80.19
+15:32:25 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 65.91AND "CPU ON-DIE thermal sensor".reading < 70.91AND "PHY B50210-#1 temp sensor".reading >= 25.19AND "PHY B50210-#1 temp sensor".reading < 30.19
+15:32:25 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 65.91AND "CPU ON-DIE thermal sensor".reading < 70.91AND "PHY B50210-#1 temp sensor".reading >= 30.19AND "PHY B50210-#1 temp sensor".reading < 35.19
+15:32:25 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 65.91AND "CPU ON-DIE thermal sensor".reading < 70.91AND "PHY B50210-#1 temp sensor".reading >= 35.19AND "PHY B50210-#1 temp sensor".reading < 40.19
+15:32:25 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 65.91AND "CPU ON-DIE thermal sensor".reading < 70.91AND "PHY B50210-#1 temp sensor".reading >= 40.19AND "PHY B50210-#1 temp sensor".reading < 45.19
+15:32:25 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 65.91AND "CPU ON-DIE thermal sensor".reading < 70.91AND "PHY B50210-#1 temp sensor".reading >= 45.19AND "PHY B50210-#1 temp sensor".reading < 50.19
+15:32:25 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 65.91AND "CPU ON-DIE thermal sensor".reading < 70.91AND "PHY B50210-#1 temp sensor".reading >= 50.19AND "PHY B50210-#1 temp sensor".reading < 55.19
+15:32:25 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 65.91AND "CPU ON-DIE thermal sensor".reading < 70.91AND "PHY B50210-#1 temp sensor".reading >= 55.19AND "PHY B50210-#1 temp sensor".reading < 60.19
+15:32:26 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 65.91AND "CPU ON-DIE thermal sensor".reading < 70.91AND "PHY B50210-#1 temp sensor".reading >= 60.19AND "PHY B50210-#1 temp sensor".reading < 65.19
+15:32:26 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 65.91AND "CPU ON-DIE thermal sensor".reading < 70.91AND "PHY B50210-#1 temp sensor".reading >= 65.19AND "PHY B50210-#1 temp sensor".reading < 70.19
+15:32:26 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 65.91AND "CPU ON-DIE thermal sensor".reading < 70.91AND "PHY B50210-#1 temp sensor".reading >= 70.19AND "PHY B50210-#1 temp sensor".reading < 75.19
+15:32:26 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 65.91AND "CPU ON-DIE thermal sensor".reading < 70.91AND "PHY B50210-#1 temp sensor".reading >= 75.19AND "PHY B50210-#1 temp sensor".reading < 80.19
+15:32:26 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 70.91AND "CPU ON-DIE thermal sensor".reading < 75.91AND "PHY B50210-#1 temp sensor".reading >= 25.19AND "PHY B50210-#1 temp sensor".reading < 30.19
+15:32:26 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 70.91AND "CPU ON-DIE thermal sensor".reading < 75.91AND "PHY B50210-#1 temp sensor".reading >= 30.19AND "PHY B50210-#1 temp sensor".reading < 35.19
+15:32:26 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 70.91AND "CPU ON-DIE thermal sensor".reading < 75.91AND "PHY B50210-#1 temp sensor".reading >= 35.19AND "PHY B50210-#1 temp sensor".reading < 40.19
+15:32:26 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 70.91AND "CPU ON-DIE thermal sensor".reading < 75.91AND "PHY B50210-#1 temp sensor".reading >= 40.19AND "PHY B50210-#1 temp sensor".reading < 45.19
+15:32:26 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 70.91AND "CPU ON-DIE thermal sensor".reading < 75.91AND "PHY B50210-#1 temp sensor".reading >= 45.19AND "PHY B50210-#1 temp sensor".reading < 50.19
+15:32:26 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 70.91AND "CPU ON-DIE thermal sensor".reading < 75.91AND "PHY B50210-#1 temp sensor".reading >= 50.19AND "PHY B50210-#1 temp sensor".reading < 55.19
+15:32:26 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 70.91AND "CPU ON-DIE thermal sensor".reading < 75.91AND "PHY B50210-#1 temp sensor".reading >= 55.19AND "PHY B50210-#1 temp sensor".reading < 60.19
+15:32:26 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 70.91AND "CPU ON-DIE thermal sensor".reading < 75.91AND "PHY B50210-#1 temp sensor".reading >= 60.19AND "PHY B50210-#1 temp sensor".reading < 65.19
+15:32:26 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 70.91AND "CPU ON-DIE thermal sensor".reading < 75.91AND "PHY B50210-#1 temp sensor".reading >= 65.19AND "PHY B50210-#1 temp sensor".reading < 70.19
+15:32:26 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 70.91AND "CPU ON-DIE thermal sensor".reading < 75.91AND "PHY B50210-#1 temp sensor".reading >= 70.19AND "PHY B50210-#1 temp sensor".reading < 75.19
+15:32:26 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 70.91AND "CPU ON-DIE thermal sensor".reading < 75.91AND "PHY B50210-#1 temp sensor".reading >= 75.19AND "PHY B50210-#1 temp sensor".reading < 80.19
+15:32:26 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 75.91AND "CPU ON-DIE thermal sensor".reading < 80.91AND "PHY B50210-#1 temp sensor".reading >= 25.19AND "PHY B50210-#1 temp sensor".reading < 30.19
+15:32:26 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 75.91AND "CPU ON-DIE thermal sensor".reading < 80.91AND "PHY B50210-#1 temp sensor".reading >= 30.19AND "PHY B50210-#1 temp sensor".reading < 35.19
+15:32:26 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 75.91AND "CPU ON-DIE thermal sensor".reading < 80.91AND "PHY B50210-#1 temp sensor".reading >= 35.19AND "PHY B50210-#1 temp sensor".reading < 40.19
+15:32:26 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 75.91AND "CPU ON-DIE thermal sensor".reading < 80.91AND "PHY B50210-#1 temp sensor".reading >= 40.19AND "PHY B50210-#1 temp sensor".reading < 45.19
+15:32:26 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 75.91AND "CPU ON-DIE thermal sensor".reading < 80.91AND "PHY B50210-#1 temp sensor".reading >= 45.19AND "PHY B50210-#1 temp sensor".reading < 50.19
+15:32:26 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 75.91AND "CPU ON-DIE thermal sensor".reading < 80.91AND "PHY B50210-#1 temp sensor".reading >= 50.19AND "PHY B50210-#1 temp sensor".reading < 55.19
+15:32:26 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 75.91AND "CPU ON-DIE thermal sensor".reading < 80.91AND "PHY B50210-#1 temp sensor".reading >= 55.19AND "PHY B50210-#1 temp sensor".reading < 60.19
+15:32:26 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 75.91AND "CPU ON-DIE thermal sensor".reading < 80.91AND "PHY B50210-#1 temp sensor".reading >= 60.19AND "PHY B50210-#1 temp sensor".reading < 65.19
+15:32:26 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 75.91AND "CPU ON-DIE thermal sensor".reading < 80.91AND "PHY B50210-#1 temp sensor".reading >= 65.19AND "PHY B50210-#1 temp sensor".reading < 70.19
+15:32:26 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 75.91AND "CPU ON-DIE thermal sensor".reading < 80.91AND "PHY B50210-#1 temp sensor".reading >= 70.19AND "PHY B50210-#1 temp sensor".reading < 75.19
+15:32:26 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 75.91AND "CPU ON-DIE thermal sensor".reading < 80.91AND "PHY B50210-#1 temp sensor".reading >= 75.19AND "PHY B50210-#1 temp sensor".reading < 80.19
+15:32:26 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 80.91AND "CPU ON-DIE thermal sensor".reading < 85.91AND "PHY B50210-#1 temp sensor".reading >= 25.19AND "PHY B50210-#1 temp sensor".reading < 30.19
+15:32:26 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 80.91AND "CPU ON-DIE thermal sensor".reading < 85.91AND "PHY B50210-#1 temp sensor".reading >= 30.19AND "PHY B50210-#1 temp sensor".reading < 35.19
+15:32:26 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 80.91AND "CPU ON-DIE thermal sensor".reading < 85.91AND "PHY B50210-#1 temp sensor".reading >= 35.19AND "PHY B50210-#1 temp sensor".reading < 40.19
+15:32:26 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 80.91AND "CPU ON-DIE thermal sensor".reading < 85.91AND "PHY B50210-#1 temp sensor".reading >= 40.19AND "PHY B50210-#1 temp sensor".reading < 45.19
+15:32:26 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 80.91AND "CPU ON-DIE thermal sensor".reading < 85.91AND "PHY B50210-#1 temp sensor".reading >= 45.19AND "PHY B50210-#1 temp sensor".reading < 50.19
+15:32:26 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 80.91AND "CPU ON-DIE thermal sensor".reading < 85.91AND "PHY B50210-#1 temp sensor".reading >= 50.19AND "PHY B50210-#1 temp sensor".reading < 55.19
+15:32:26 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 80.91AND "CPU ON-DIE thermal sensor".reading < 85.91AND "PHY B50210-#1 temp sensor".reading >= 55.19AND "PHY B50210-#1 temp sensor".reading < 60.19
+15:32:26 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 80.91AND "CPU ON-DIE thermal sensor".reading < 85.91AND "PHY B50210-#1 temp sensor".reading >= 60.19AND "PHY B50210-#1 temp sensor".reading < 65.19
+15:32:26 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 80.91AND "CPU ON-DIE thermal sensor".reading < 85.91AND "PHY B50210-#1 temp sensor".reading >= 65.19AND "PHY B50210-#1 temp sensor".reading < 70.19
+15:32:26 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 80.91AND "CPU ON-DIE thermal sensor".reading < 85.91AND "PHY B50210-#1 temp sensor".reading >= 70.19AND "PHY B50210-#1 temp sensor".reading < 75.19
+15:32:26 INFO SELECT COUNT(DISTINCT("CPU ON-DIE thermal sensor".serial_number)) FROM "CPU ON-DIE thermal sensor" INNER JOIN "PHY B50210-#1 temp sensor"ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50210-#1 temp sensor".serial_number  AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50210-#1 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50210-#1 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50210-#1 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%' AND "CPU ON-DIE thermal sensor".test_type = 'ITS' AND "CPU ON-DIE thermal sensor".reading >= 80.91AND "CPU ON-DIE thermal sensor".reading < 85.91AND "PHY B50210-#1 temp sensor".reading >= 75.19AND "PHY B50210-#1 temp sensor".reading < 80.19
+11:25:03 INFO select sensor_name from "sensor_to_unit" LIMIT 1 
+11:25:03 INFO SELECT DISTINCT (test_type) from "CPU ON-DIE thermal sensor"
+11:25:03 INFO SELECT table_name FROM INFORMATION_SCHEMA.views WHERE table_schema = ANY (current_schemas(false));
+11:25:03 INFO SELECT MIN(reading) FROM "CPU ON-DIE thermal sensor" WHERE serial_number LIKE 'FGR60F%%' AND test_type = 'ITS'
+11:25:03 INFO SELECT MAX(reading) FROM "CPU ON-DIE thermal sensor" WHERE serial_number LIKE 'FGR60F%%' AND test_type = 'ITS'
+11:25:03 INFO SELECT table_name FROM "main_sensor_graph"
+11:25:03 INFO (psycopg2.errors.UndefinedTable) relation "main_sensor_graph" does not exist
+LINE 1: SELECT table_name FROM "main_sensor_graph"
+                               ^
+
+[SQL: SELECT table_name FROM "main_sensor_graph"]
+(Background on this error at: http://sqlalche.me/e/f405)
+11:25:03 INFO SELECT MIN (mycount) from (select distinct (COUNT(reading)) as mycount from "EXT_Error" WHERE in_log = 'True' AND serial_number LIKE 'FGR60F%%' GROUP BY serial_number, test_date, test_type) AS "Dummy" 
+11:25:03 INFO SELECT MAX (mycount) from (select distinct (COUNT(reading)) as mycount from "EXT_Error" WHERE in_log = 'True' AND serial_number LIKE 'FGR60F%%' GROUP BY serial_number, test_date, test_type) AS "Dummy" 
+11:25:03 INFO SELECT table_name FROM "main_vs_graph"
+11:25:03 INFO (psycopg2.errors.UndefinedTable) relation "main_vs_graph" does not exist
+LINE 1: SELECT table_name FROM "main_vs_graph"
+                               ^
+
+[SQL: SELECT table_name FROM "main_vs_graph"]
+(Background on this error at: http://sqlalche.me/e/f405)
+11:25:04 INFO select sensor_name from "sensor_to_unit" LIMIT 1 
+11:25:04 INFO SELECT DISTINCT (test_type) from "CPU ON-DIE thermal sensor"
+11:25:04 INFO SELECT table_name FROM "main_vs_graph"
+11:25:04 INFO (psycopg2.errors.UndefinedTable) relation "main_vs_graph" does not exist
+LINE 1: SELECT table_name FROM "main_vs_graph"
+                               ^
+
+[SQL: SELECT table_name FROM "main_vs_graph"]
+(Background on this error at: http://sqlalche.me/e/f405)
+11:25:04 INFO select sensor_name from "sensor_to_unit" LIMIT 1 
+11:25:04 INFO SELECT DISTINCT (test_type) from "CPU ON-DIE thermal sensor"
+11:25:04 INFO SELECT MIN(reading) FROM "CPU ON-DIE thermal sensor" WHERE serial_number LIKE 'FGR60F%%' AND test_type = 'ITS'
+11:25:04 INFO SELECT MAX(reading) FROM "CPU ON-DIE thermal sensor" WHERE serial_number LIKE 'FGR60F%%' AND test_type = 'ITS'
+11:25:04 INFO SELECT MIN(reading) FROM "CPU ON-DIE thermal sensor" WHERE serial_number LIKE 'FGR60F%%' AND test_type = 'ITS'
+11:25:04 INFO SELECT MAX(reading) FROM "CPU ON-DIE thermal sensor" WHERE serial_number LIKE 'FGR60F%%' AND test_type = 'ITS'
+11:26:02 INFO Main VS Sensor: main_vs_graph Table created
+11:26:02 INFO SELECT to_regclass('"PHY B50182 temp sensor_VS_CPU ON-DIE thermal sensor_ITS"')
+11:26:02 INFO CREATE VIEW "PHY B50182 temp sensor_VS_CPU ON-DIE thermal sensor_ITS" AS SELECT "PHY B50182 temp sensor".serial_number,"PHY B50182 temp sensor".test_date, "PHY B50182 temp sensor".test_type, AVG("PHY B50182 temp sensor".reading) AS "PHY B50182 temp sensor_reading",AVG("CPU ON-DIE thermal sensor".reading) AS "CPU ON-DIE thermal sensor_reading" FROM "PHY B50182 temp sensor" INNER JOIN"CPU ON-DIE thermal sensor" ON "PHY B50182 temp sensor".serial_number = "CPU ON-DIE thermal sensor".serial_number AND "PHY B50182 temp sensor".ref_line_number = "CPU ON-DIE thermal sensor".ref_line_number AND "PHY B50182 temp sensor".test_date = "CPU ON-DIE thermal sensor".test_date WHERE "PHY B50182 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50182 temp sensor".serial_number LIKE 'FGR60F%%'AND "PHY B50182 temp sensor".test_type = 'ITS'GROUP BY("PHY B50182 temp sensor".serial_number, "PHY B50182 temp sensor".test_date, "PHY B50182 temp sensor".test_type)ORDER BY "PHY B50182 temp sensor".serial_number
+11:26:02 INFO SELECT to_regclass('"PHY B50182 temp sensor_VS_CPU ON-DIE thermal sensor_ITS"')
+11:26:02 INFO SELECT table_name FROM "main_vs_graph" where table_name='PHY B50182 temp sensor_VS_CPU ON-DIE thermal sensor_ITS' 
+11:26:02 INFO INSERT INTO "main_vs_graph" (table_name, sensor_x, sensor_y) VALUES ('PHY B50182 temp sensor_VS_CPU ON-DIE thermal sensor_ITS','PHY B50182 temp sensor', 'CPU ON-DIE thermal sensor');
+11:26:02 INFO SELECT table_name FROM "main_vs_graph"
+11:26:02 INFO SELECT to_regclass('"Horizontal_Based_AVG"')
+11:26:02 INFO CREATE VIEW "Horizontal_Based_AVG" AS SELECT DISTINCT(serial_number), test_date, test_type, "PHY B50182 temp sensor_reading", "CPU ON-DIE thermal sensor_reading" FROM "PHY B50182 temp sensor_VS_CPU ON-DIE thermal sensor_ITS" WHERE (serial_number, "PHY B50182 temp sensor_reading", "CPU ON-DIE thermal sensor_reading") IN (SELECT serial_number, "PHY B50182 temp sensor_reading", "CPU ON-DIE thermal sensor_reading" FROM ( SELECT serial_number, "PHY B50182 temp sensor_reading", "CPU ON-DIE thermal sensor_reading", row_number() over (partition by serial_number ORDER BY "PHY B50182 temp sensor_reading" DESC, "CPU ON-DIE thermal sensor_reading" DESC) AS rn FROM "PHY B50182 temp sensor_VS_CPU ON-DIE thermal sensor_ITS") AS X WHERE rn = 1) ORDER BY serial_number
+11:26:02 INFO SELECT to_regclass('"Horizontal_Based_AVG"')
+11:26:02 INFO SELECT table_name FROM "main_vs_graph" where table_name='Horizontal_Based_AVG' 
+11:26:02 INFO INSERT INTO "main_vs_graph" (table_name, sensor_x, sensor_y) VALUES ('Horizontal_Based_AVG','PHY B50182 temp sensor', 'CPU ON-DIE thermal sensor');
+11:26:02 INFO SELECT table_name FROM "main_vs_graph"
+11:26:02 INFO SELECT to_regclass('"Vertical_Based_AVG"')
+11:26:02 INFO CREATE VIEW "Vertical_Based_AVG" AS SELECT DISTINCT(serial_number), test_date, test_type, "PHY B50182 temp sensor_reading", "CPU ON-DIE thermal sensor_reading" FROM "PHY B50182 temp sensor_VS_CPU ON-DIE thermal sensor_ITS" WHERE (serial_number, "PHY B50182 temp sensor_reading", "CPU ON-DIE thermal sensor_reading") IN (SELECT serial_number, "PHY B50182 temp sensor_reading", "CPU ON-DIE thermal sensor_reading" FROM ( SELECT serial_number, "PHY B50182 temp sensor_reading", "CPU ON-DIE thermal sensor_reading", row_number() over (partition by serial_number ORDER BY "CPU ON-DIE thermal sensor_reading" DESC,"PHY B50182 temp sensor_reading" DESC) AS rn FROM "PHY B50182 temp sensor_VS_CPU ON-DIE thermal sensor_ITS") AS X WHERE rn = 1) ORDER BY serial_number
+11:26:02 INFO SELECT to_regclass('"Vertical_Based_AVG"')
+11:26:02 INFO SELECT table_name FROM "main_vs_graph" where table_name='Vertical_Based_AVG' 
+11:26:02 INFO INSERT INTO "main_vs_graph" (table_name, sensor_x, sensor_y) VALUES ('Vertical_Based_AVG','PHY B50182 temp sensor', 'CPU ON-DIE thermal sensor');
+11:26:02 INFO SELECT table_name FROM "main_vs_graph"
+11:26:05 INFO SELECT COLUMN_NAME FROM information_schema.COLUMNS WHERE TABLE_NAME = 'PHY B50182 temp sensor_VS_CPU ON-DIE thermal sensor_ITS';
+11:26:07 INFO SELECT "PHY B50182 temp sensor_reading" FROM "PHY B50182 temp sensor_VS_CPU ON-DIE thermal sensor_ITS"
+11:26:08 INFO SELECT "CPU ON-DIE thermal sensor_reading" FROM "PHY B50182 temp sensor_VS_CPU ON-DIE thermal sensor_ITS"
+11:27:14 WARNING Main VS Sensor: main_vs_graph Table already exists
+11:27:14 INFO SELECT to_regclass('"CPU ON-DIE thermal sensor_VS_PHY B50182 temp sensor_ITS"')
+11:27:14 INFO CREATE VIEW "CPU ON-DIE thermal sensor_VS_PHY B50182 temp sensor_ITS" AS SELECT "CPU ON-DIE thermal sensor".serial_number,"CPU ON-DIE thermal sensor".test_date, "CPU ON-DIE thermal sensor".test_type, AVG("CPU ON-DIE thermal sensor".reading) AS "CPU ON-DIE thermal sensor_reading",AVG("PHY B50182 temp sensor".reading) AS "PHY B50182 temp sensor_reading" FROM "CPU ON-DIE thermal sensor" INNER JOIN"PHY B50182 temp sensor" ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50182 temp sensor".serial_number AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50182 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50182 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50182 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%'AND "CPU ON-DIE thermal sensor".test_type = 'ITS'GROUP BY("CPU ON-DIE thermal sensor".serial_number, "CPU ON-DIE thermal sensor".test_date, "CPU ON-DIE thermal sensor".test_type)ORDER BY "CPU ON-DIE thermal sensor".serial_number
+11:27:14 INFO SELECT to_regclass('"CPU ON-DIE thermal sensor_VS_PHY B50182 temp sensor_ITS"')
+11:27:14 INFO SELECT table_name FROM "main_vs_graph" where table_name='CPU ON-DIE thermal sensor_VS_PHY B50182 temp sensor_ITS' 
+11:27:14 INFO INSERT INTO "main_vs_graph" (table_name, sensor_x, sensor_y) VALUES ('CPU ON-DIE thermal sensor_VS_PHY B50182 temp sensor_ITS','CPU ON-DIE thermal sensor', 'PHY B50182 temp sensor');
+11:27:14 INFO SELECT table_name FROM "main_vs_graph"
+11:27:14 INFO SELECT to_regclass('"Horizontal_Based_AVG"')
+11:27:14 INFO DROP VIEW "Horizontal_Based_AVG";
+11:27:14 INFO CREATE VIEW "Horizontal_Based_AVG" AS SELECT DISTINCT(serial_number), test_date, test_type, "CPU ON-DIE thermal sensor_reading", "PHY B50182 temp sensor_reading" FROM "CPU ON-DIE thermal sensor_VS_PHY B50182 temp sensor_ITS" WHERE (serial_number, "CPU ON-DIE thermal sensor_reading", "PHY B50182 temp sensor_reading") IN (SELECT serial_number, "CPU ON-DIE thermal sensor_reading", "PHY B50182 temp sensor_reading" FROM ( SELECT serial_number, "CPU ON-DIE thermal sensor_reading", "PHY B50182 temp sensor_reading", row_number() over (partition by serial_number ORDER BY "CPU ON-DIE thermal sensor_reading" DESC, "PHY B50182 temp sensor_reading" DESC) AS rn FROM "CPU ON-DIE thermal sensor_VS_PHY B50182 temp sensor_ITS") AS X WHERE rn = 1) ORDER BY serial_number
+11:27:14 INFO SELECT to_regclass('"Horizontal_Based_AVG"')
+11:27:14 INFO SELECT table_name FROM "main_vs_graph" where table_name='Horizontal_Based_AVG' 
+11:27:14 INFO UPDATE "main_vs_graph" set sensor_x='CPU ON-DIE thermal sensor', sensor_y='PHY B50182 temp sensor' WHERE table_name = 'Horizontal_Based_AVG';
+11:27:14 INFO SELECT table_name FROM "main_vs_graph"
+11:27:14 INFO SELECT to_regclass('"Vertical_Based_AVG"')
+11:27:14 INFO DROP VIEW "Vertical_Based_AVG";
+11:27:14 INFO CREATE VIEW "Vertical_Based_AVG" AS SELECT DISTINCT(serial_number), test_date, test_type, "CPU ON-DIE thermal sensor_reading", "PHY B50182 temp sensor_reading" FROM "CPU ON-DIE thermal sensor_VS_PHY B50182 temp sensor_ITS" WHERE (serial_number, "CPU ON-DIE thermal sensor_reading", "PHY B50182 temp sensor_reading") IN (SELECT serial_number, "CPU ON-DIE thermal sensor_reading", "PHY B50182 temp sensor_reading" FROM ( SELECT serial_number, "CPU ON-DIE thermal sensor_reading", "PHY B50182 temp sensor_reading", row_number() over (partition by serial_number ORDER BY "PHY B50182 temp sensor_reading" DESC,"CPU ON-DIE thermal sensor_reading" DESC) AS rn FROM "CPU ON-DIE thermal sensor_VS_PHY B50182 temp sensor_ITS") AS X WHERE rn = 1) ORDER BY serial_number
+11:27:14 INFO SELECT to_regclass('"Vertical_Based_AVG"')
+11:27:14 INFO SELECT table_name FROM "main_vs_graph" where table_name='Vertical_Based_AVG' 
+11:27:14 INFO UPDATE "main_vs_graph" set sensor_x='CPU ON-DIE thermal sensor', sensor_y='PHY B50182 temp sensor' WHERE table_name = 'Vertical_Based_AVG';
+11:27:14 INFO SELECT table_name FROM "main_vs_graph"
+11:27:28 INFO SELECT COLUMN_NAME FROM information_schema.COLUMNS WHERE TABLE_NAME = 'CPU ON-DIE thermal sensor_VS_PHY B50182 temp sensor_ITS';
+11:27:29 INFO SELECT "CPU ON-DIE thermal sensor_reading" FROM "CPU ON-DIE thermal sensor_VS_PHY B50182 temp sensor_ITS"
+11:27:29 INFO SELECT "PHY B50182 temp sensor_reading" FROM "CPU ON-DIE thermal sensor_VS_PHY B50182 temp sensor_ITS"
+11:27:59 WARNING Main VS Sensor: main_vs_graph Table already exists
+11:27:59 INFO SELECT to_regclass('"CPU ON-DIE thermal sensor_VS_PHY B50182 temp sensor_All"')
+11:27:59 INFO CREATE VIEW "CPU ON-DIE thermal sensor_VS_PHY B50182 temp sensor_All" AS SELECT "CPU ON-DIE thermal sensor".serial_number,"CPU ON-DIE thermal sensor".test_date, "CPU ON-DIE thermal sensor".test_type, AVG("CPU ON-DIE thermal sensor".reading) AS "CPU ON-DIE thermal sensor_reading",AVG("PHY B50182 temp sensor".reading) AS "PHY B50182 temp sensor_reading" FROM "CPU ON-DIE thermal sensor" INNER JOIN"PHY B50182 temp sensor" ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50182 temp sensor".serial_number AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50182 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50182 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50182 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%'GROUP BY("CPU ON-DIE thermal sensor".serial_number, "CPU ON-DIE thermal sensor".test_date, "CPU ON-DIE thermal sensor".test_type)ORDER BY "CPU ON-DIE thermal sensor".serial_number
+11:27:59 INFO SELECT to_regclass('"CPU ON-DIE thermal sensor_VS_PHY B50182 temp sensor_All"')
+11:27:59 INFO SELECT table_name FROM "main_vs_graph" where table_name='CPU ON-DIE thermal sensor_VS_PHY B50182 temp sensor_All' 
+11:27:59 INFO INSERT INTO "main_vs_graph" (table_name, sensor_x, sensor_y) VALUES ('CPU ON-DIE thermal sensor_VS_PHY B50182 temp sensor_All','CPU ON-DIE thermal sensor', 'PHY B50182 temp sensor');
+11:27:59 INFO SELECT table_name FROM "main_vs_graph"
+11:27:59 INFO SELECT to_regclass('"Horizontal_Based_AVG"')
+11:27:59 INFO DROP VIEW "Horizontal_Based_AVG";
+11:27:59 INFO CREATE VIEW "Horizontal_Based_AVG" AS SELECT DISTINCT(serial_number), test_date, test_type, "CPU ON-DIE thermal sensor_reading", "PHY B50182 temp sensor_reading" FROM "CPU ON-DIE thermal sensor_VS_PHY B50182 temp sensor_All" WHERE (serial_number, "CPU ON-DIE thermal sensor_reading", "PHY B50182 temp sensor_reading") IN (SELECT serial_number, "CPU ON-DIE thermal sensor_reading", "PHY B50182 temp sensor_reading" FROM ( SELECT serial_number, "CPU ON-DIE thermal sensor_reading", "PHY B50182 temp sensor_reading", row_number() over (partition by serial_number ORDER BY "CPU ON-DIE thermal sensor_reading" DESC, "PHY B50182 temp sensor_reading" DESC) AS rn FROM "CPU ON-DIE thermal sensor_VS_PHY B50182 temp sensor_All") AS X WHERE rn = 1) ORDER BY serial_number
+11:27:59 INFO SELECT to_regclass('"Horizontal_Based_AVG"')
+11:27:59 INFO SELECT table_name FROM "main_vs_graph" where table_name='Horizontal_Based_AVG' 
+11:27:59 INFO UPDATE "main_vs_graph" set sensor_x='CPU ON-DIE thermal sensor', sensor_y='PHY B50182 temp sensor' WHERE table_name = 'Horizontal_Based_AVG';
+11:27:59 INFO SELECT table_name FROM "main_vs_graph"
+11:27:59 INFO SELECT to_regclass('"Vertical_Based_AVG"')
+11:27:59 INFO DROP VIEW "Vertical_Based_AVG";
+11:27:59 INFO CREATE VIEW "Vertical_Based_AVG" AS SELECT DISTINCT(serial_number), test_date, test_type, "CPU ON-DIE thermal sensor_reading", "PHY B50182 temp sensor_reading" FROM "CPU ON-DIE thermal sensor_VS_PHY B50182 temp sensor_All" WHERE (serial_number, "CPU ON-DIE thermal sensor_reading", "PHY B50182 temp sensor_reading") IN (SELECT serial_number, "CPU ON-DIE thermal sensor_reading", "PHY B50182 temp sensor_reading" FROM ( SELECT serial_number, "CPU ON-DIE thermal sensor_reading", "PHY B50182 temp sensor_reading", row_number() over (partition by serial_number ORDER BY "PHY B50182 temp sensor_reading" DESC,"CPU ON-DIE thermal sensor_reading" DESC) AS rn FROM "CPU ON-DIE thermal sensor_VS_PHY B50182 temp sensor_All") AS X WHERE rn = 1) ORDER BY serial_number
+11:27:59 INFO SELECT to_regclass('"Vertical_Based_AVG"')
+11:27:59 INFO SELECT table_name FROM "main_vs_graph" where table_name='Vertical_Based_AVG' 
+11:27:59 INFO UPDATE "main_vs_graph" set sensor_x='CPU ON-DIE thermal sensor', sensor_y='PHY B50182 temp sensor' WHERE table_name = 'Vertical_Based_AVG';
+11:27:59 INFO SELECT table_name FROM "main_vs_graph"
+11:28:01 INFO SELECT COLUMN_NAME FROM information_schema.COLUMNS WHERE TABLE_NAME = 'CPU ON-DIE thermal sensor_VS_PHY B50182 temp sensor_All';
+11:28:01 INFO SELECT "CPU ON-DIE thermal sensor_reading" FROM "CPU ON-DIE thermal sensor_VS_PHY B50182 temp sensor_All"
+11:28:02 INFO SELECT "PHY B50182 temp sensor_reading" FROM "CPU ON-DIE thermal sensor_VS_PHY B50182 temp sensor_All"
+11:28:43 WARNING Main VS Sensor: main_vs_graph Table already exists
+11:28:43 INFO SELECT to_regclass('"CPU ON-DIE thermal sensor_VS_PHY B50182 temp sensor_HTS"')
+11:28:43 INFO CREATE VIEW "CPU ON-DIE thermal sensor_VS_PHY B50182 temp sensor_HTS" AS SELECT "CPU ON-DIE thermal sensor".serial_number,"CPU ON-DIE thermal sensor".test_date, "CPU ON-DIE thermal sensor".test_type, AVG("CPU ON-DIE thermal sensor".reading) AS "CPU ON-DIE thermal sensor_reading",AVG("PHY B50182 temp sensor".reading) AS "PHY B50182 temp sensor_reading" FROM "CPU ON-DIE thermal sensor" INNER JOIN"PHY B50182 temp sensor" ON "CPU ON-DIE thermal sensor".serial_number = "PHY B50182 temp sensor".serial_number AND "CPU ON-DIE thermal sensor".ref_line_number = "PHY B50182 temp sensor".ref_line_number AND "CPU ON-DIE thermal sensor".test_date = "PHY B50182 temp sensor".test_date WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "PHY B50182 temp sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%'AND "CPU ON-DIE thermal sensor".test_type = 'HTS'GROUP BY("CPU ON-DIE thermal sensor".serial_number, "CPU ON-DIE thermal sensor".test_date, "CPU ON-DIE thermal sensor".test_type)ORDER BY "CPU ON-DIE thermal sensor".serial_number
+11:28:43 INFO SELECT to_regclass('"CPU ON-DIE thermal sensor_VS_PHY B50182 temp sensor_HTS"')
+11:28:43 INFO SELECT table_name FROM "main_vs_graph" where table_name='CPU ON-DIE thermal sensor_VS_PHY B50182 temp sensor_HTS' 
+11:28:43 INFO INSERT INTO "main_vs_graph" (table_name, sensor_x, sensor_y) VALUES ('CPU ON-DIE thermal sensor_VS_PHY B50182 temp sensor_HTS','CPU ON-DIE thermal sensor', 'PHY B50182 temp sensor');
+11:28:43 INFO SELECT table_name FROM "main_vs_graph"
+11:28:43 INFO SELECT to_regclass('"Horizontal_Based_AVG"')
+11:28:43 INFO DROP VIEW "Horizontal_Based_AVG";
+11:28:43 INFO CREATE VIEW "Horizontal_Based_AVG" AS SELECT DISTINCT(serial_number), test_date, test_type, "CPU ON-DIE thermal sensor_reading", "PHY B50182 temp sensor_reading" FROM "CPU ON-DIE thermal sensor_VS_PHY B50182 temp sensor_HTS" WHERE (serial_number, "CPU ON-DIE thermal sensor_reading", "PHY B50182 temp sensor_reading") IN (SELECT serial_number, "CPU ON-DIE thermal sensor_reading", "PHY B50182 temp sensor_reading" FROM ( SELECT serial_number, "CPU ON-DIE thermal sensor_reading", "PHY B50182 temp sensor_reading", row_number() over (partition by serial_number ORDER BY "CPU ON-DIE thermal sensor_reading" DESC, "PHY B50182 temp sensor_reading" DESC) AS rn FROM "CPU ON-DIE thermal sensor_VS_PHY B50182 temp sensor_HTS") AS X WHERE rn = 1) ORDER BY serial_number
+11:28:43 INFO SELECT to_regclass('"Horizontal_Based_AVG"')
+11:28:43 INFO SELECT table_name FROM "main_vs_graph" where table_name='Horizontal_Based_AVG' 
+11:28:43 INFO UPDATE "main_vs_graph" set sensor_x='CPU ON-DIE thermal sensor', sensor_y='PHY B50182 temp sensor' WHERE table_name = 'Horizontal_Based_AVG';
+11:28:43 INFO SELECT table_name FROM "main_vs_graph"
+11:28:43 INFO SELECT to_regclass('"Vertical_Based_AVG"')
+11:28:43 INFO DROP VIEW "Vertical_Based_AVG";
+11:28:43 INFO CREATE VIEW "Vertical_Based_AVG" AS SELECT DISTINCT(serial_number), test_date, test_type, "CPU ON-DIE thermal sensor_reading", "PHY B50182 temp sensor_reading" FROM "CPU ON-DIE thermal sensor_VS_PHY B50182 temp sensor_HTS" WHERE (serial_number, "CPU ON-DIE thermal sensor_reading", "PHY B50182 temp sensor_reading") IN (SELECT serial_number, "CPU ON-DIE thermal sensor_reading", "PHY B50182 temp sensor_reading" FROM ( SELECT serial_number, "CPU ON-DIE thermal sensor_reading", "PHY B50182 temp sensor_reading", row_number() over (partition by serial_number ORDER BY "PHY B50182 temp sensor_reading" DESC,"CPU ON-DIE thermal sensor_reading" DESC) AS rn FROM "CPU ON-DIE thermal sensor_VS_PHY B50182 temp sensor_HTS") AS X WHERE rn = 1) ORDER BY serial_number
+11:28:43 INFO SELECT to_regclass('"Vertical_Based_AVG"')
+11:28:43 INFO SELECT table_name FROM "main_vs_graph" where table_name='Vertical_Based_AVG' 
+11:28:43 INFO UPDATE "main_vs_graph" set sensor_x='CPU ON-DIE thermal sensor', sensor_y='PHY B50182 temp sensor' WHERE table_name = 'Vertical_Based_AVG';
+11:28:43 INFO SELECT table_name FROM "main_vs_graph"
+11:28:44 INFO SELECT COLUMN_NAME FROM information_schema.COLUMNS WHERE TABLE_NAME = 'CPU ON-DIE thermal sensor_VS_PHY B50182 temp sensor_HTS';
+11:28:45 INFO SELECT "CPU ON-DIE thermal sensor_reading" FROM "CPU ON-DIE thermal sensor_VS_PHY B50182 temp sensor_HTS"
+11:28:45 INFO SELECT "PHY B50182 temp sensor_reading" FROM "CPU ON-DIE thermal sensor_VS_PHY B50182 temp sensor_HTS"
+11:30:09 INFO SELECT COLUMN_NAME FROM information_schema.COLUMNS WHERE TABLE_NAME = 'CPU ON-DIE thermal sensor_VS_PHY B50182 temp sensor_ITS';
+11:30:09 INFO SELECT "CPU ON-DIE thermal sensor_reading" FROM "CPU ON-DIE thermal sensor_VS_PHY B50182 temp sensor_ITS"
+11:30:10 INFO SELECT "PHY B50182 temp sensor_reading" FROM "CPU ON-DIE thermal sensor_VS_PHY B50182 temp sensor_ITS"
+11:31:16 INFO SELECT COLUMN_NAME FROM information_schema.COLUMNS WHERE TABLE_NAME = 'CPU ON-DIE thermal sensor_VS_PHY B50182 temp sensor_All';
+11:31:17 INFO SELECT "CPU ON-DIE thermal sensor_reading" FROM "CPU ON-DIE thermal sensor_VS_PHY B50182 temp sensor_All"
+11:31:17 INFO SELECT "PHY B50182 temp sensor_reading" FROM "CPU ON-DIE thermal sensor_VS_PHY B50182 temp sensor_All"
+14:55:21 INFO select sensor_name from "sensor_to_unit" LIMIT 1 
+14:55:21 INFO SELECT DISTINCT (test_type) from "CPU ON-DIE thermal sensor"
+14:55:21 INFO SELECT table_name FROM INFORMATION_SCHEMA.views WHERE table_schema = ANY (current_schemas(false));
+14:55:21 INFO SELECT MIN(reading) FROM "CPU ON-DIE thermal sensor" WHERE serial_number LIKE 'FGR60F%%' AND test_type = 'ITS'
+14:55:21 INFO SELECT MAX(reading) FROM "CPU ON-DIE thermal sensor" WHERE serial_number LIKE 'FGR60F%%' AND test_type = 'ITS'
+14:55:21 INFO SELECT table_name FROM "main_sensor_graph"
+14:55:21 INFO (psycopg2.errors.UndefinedTable) relation "main_sensor_graph" does not exist
+LINE 1: SELECT table_name FROM "main_sensor_graph"
+                               ^
+
+[SQL: SELECT table_name FROM "main_sensor_graph"]
+(Background on this error at: http://sqlalche.me/e/f405)
+14:55:21 INFO SELECT MIN (mycount) from (select distinct (COUNT(reading)) as mycount from "EXT_Error" WHERE in_log = 'True' AND serial_number LIKE 'FGR60F%%' GROUP BY serial_number, test_date, test_type) AS "Dummy" 
+14:55:21 INFO SELECT MAX (mycount) from (select distinct (COUNT(reading)) as mycount from "EXT_Error" WHERE in_log = 'True' AND serial_number LIKE 'FGR60F%%' GROUP BY serial_number, test_date, test_type) AS "Dummy" 
+14:55:21 INFO SELECT table_name FROM "main_vs_graph"
+14:55:22 INFO select sensor_name from "sensor_to_unit" LIMIT 1 
+14:55:22 INFO SELECT DISTINCT (test_type) from "CPU ON-DIE thermal sensor"
+14:55:22 INFO SELECT table_name FROM "main_vs_graph"
+14:55:22 INFO select sensor_name from "sensor_to_unit" LIMIT 1 
+14:55:22 INFO SELECT DISTINCT (test_type) from "CPU ON-DIE thermal sensor"
+14:55:22 INFO SELECT MIN(reading) FROM "CPU ON-DIE thermal sensor" WHERE serial_number LIKE 'FGR60F%%' AND test_type = 'ITS'
+14:55:22 INFO SELECT MAX(reading) FROM "CPU ON-DIE thermal sensor" WHERE serial_number LIKE 'FGR60F%%' AND test_type = 'ITS'
+14:55:22 INFO SELECT MIN(reading) FROM "CPU ON-DIE thermal sensor" WHERE serial_number LIKE 'FGR60F%%' AND test_type = 'ITS'
+14:55:22 INFO SELECT MAX(reading) FROM "CPU ON-DIE thermal sensor" WHERE serial_number LIKE 'FGR60F%%' AND test_type = 'ITS'
+14:55:44 INFO SELECT COLUMN_NAME FROM information_schema.COLUMNS WHERE TABLE_NAME = 'CPU ON-DIE thermal sensor_VS_PHY B50182 temp sensor_HTS';
+14:55:47 INFO SELECT "CPU ON-DIE thermal sensor_reading" FROM "CPU ON-DIE thermal sensor_VS_PHY B50182 temp sensor_HTS"
+14:55:47 INFO SELECT "PHY B50182 temp sensor_reading" FROM "CPU ON-DIE thermal sensor_VS_PHY B50182 temp sensor_HTS"
+14:46:30 INFO select sensor_name from "sensor_to_unit" LIMIT 1 
+14:46:30 INFO SELECT DISTINCT (test_type) from "CPU ON-DIE thermal sensor"
+14:46:30 INFO SELECT table_name FROM INFORMATION_SCHEMA.views WHERE table_schema = ANY (current_schemas(false));
+14:46:30 INFO SELECT MIN(reading) FROM "CPU ON-DIE thermal sensor" WHERE serial_number LIKE 'FGR60F%%' AND test_type = 'ITS'
+14:46:30 INFO SELECT MAX(reading) FROM "CPU ON-DIE thermal sensor" WHERE serial_number LIKE 'FGR60F%%' AND test_type = 'ITS'
+14:46:31 INFO SELECT table_name FROM "main_sensor_graph"
+14:46:31 INFO (psycopg2.errors.UndefinedTable) relation "main_sensor_graph" does not exist
+LINE 1: SELECT table_name FROM "main_sensor_graph"
+                               ^
+
+[SQL: SELECT table_name FROM "main_sensor_graph"]
+(Background on this error at: http://sqlalche.me/e/f405)
+14:46:31 INFO SELECT MIN (mycount) from (select distinct (COUNT(reading)) as mycount from "EXT_Error" WHERE in_log = 'True' AND serial_number LIKE 'FGR60F%%' GROUP BY serial_number, test_date, test_type) AS "Dummy" 
+14:46:31 INFO SELECT MAX (mycount) from (select distinct (COUNT(reading)) as mycount from "EXT_Error" WHERE in_log = 'True' AND serial_number LIKE 'FGR60F%%' GROUP BY serial_number, test_date, test_type) AS "Dummy" 
+14:46:31 INFO SELECT table_name FROM "main_vs_graph"
+14:46:32 INFO select sensor_name from "sensor_to_unit" LIMIT 1 
+14:46:32 INFO SELECT DISTINCT (test_type) from "CPU ON-DIE thermal sensor"
+14:46:32 INFO SELECT table_name FROM "main_vs_graph"
+14:46:32 INFO select sensor_name from "sensor_to_unit" LIMIT 1 
+14:46:32 INFO SELECT DISTINCT (test_type) from "CPU ON-DIE thermal sensor"
+14:46:32 INFO SELECT MIN(reading) FROM "CPU ON-DIE thermal sensor" WHERE serial_number LIKE 'FGR60F%%' AND test_type = 'ITS'
+14:46:32 INFO SELECT MAX(reading) FROM "CPU ON-DIE thermal sensor" WHERE serial_number LIKE 'FGR60F%%' AND test_type = 'ITS'
+14:46:32 INFO SELECT MIN(reading) FROM "CPU ON-DIE thermal sensor" WHERE serial_number LIKE 'FGR60F%%' AND test_type = 'ITS'
+14:46:32 INFO SELECT MAX(reading) FROM "CPU ON-DIE thermal sensor" WHERE serial_number LIKE 'FGR60F%%' AND test_type = 'ITS'
+15:24:03 INFO SELECT MIN(reading) FROM "" WHERE serial_number LIKE '%%' AND test_type = 'ITS'
+15:24:03 INFO (psycopg2.errors.SyntaxError) zero-length delimited identifier at or near """"
+LINE 1: SELECT MIN(reading) FROM "" WHERE serial_number LIKE '%' AND...
+                                 ^
+
+[SQL: SELECT MIN(reading) FROM "" WHERE serial_number LIKE '%%' AND test_type = 'ITS']
+(Background on this error at: http://sqlalche.me/e/f405)
+15:24:03 INFO SELECT MAX(reading) FROM "" WHERE serial_number LIKE '%%' AND test_type = 'ITS'
+15:24:03 INFO (psycopg2.errors.SyntaxError) zero-length delimited identifier at or near """"
+LINE 1: SELECT MAX(reading) FROM "" WHERE serial_number LIKE '%' AND...
+                                 ^
+
+[SQL: SELECT MAX(reading) FROM "" WHERE serial_number LIKE '%%' AND test_type = 'ITS']
+(Background on this error at: http://sqlalche.me/e/f405)
+15:24:03 INFO SELECT MIN(reading) FROM "No Table Selected" WHERE serial_number LIKE '%%' AND test_type = 'ITS'
+15:24:03 INFO (psycopg2.errors.UndefinedTable) relation "No Table Selected" does not exist
+LINE 1: SELECT MIN(reading) FROM "No Table Selected" WHERE serial_nu...
+                                 ^
+
+[SQL: SELECT MIN(reading) FROM "No Table Selected" WHERE serial_number LIKE '%%' AND test_type = 'ITS']
+(Background on this error at: http://sqlalche.me/e/f405)
+15:24:03 INFO SELECT MAX(reading) FROM "No Table Selected" WHERE serial_number LIKE '%%' AND test_type = 'ITS'
+15:24:03 INFO (psycopg2.errors.UndefinedTable) relation "No Table Selected" does not exist
+LINE 1: SELECT MAX(reading) FROM "No Table Selected" WHERE serial_nu...
+                                 ^
+
+[SQL: SELECT MAX(reading) FROM "No Table Selected" WHERE serial_number LIKE '%%' AND test_type = 'ITS']
+(Background on this error at: http://sqlalche.me/e/f405)
+15:24:03 INFO select sensor_name from "sensor_to_unit" LIMIT 1 
+15:24:03 INFO (psycopg2.errors.UndefinedTable) relation "sensor_to_unit" does not exist
+LINE 1: select sensor_name from "sensor_to_unit" LIMIT 1 
+                                ^
+
+[SQL: select sensor_name from "sensor_to_unit" LIMIT 1 ]
+(Background on this error at: http://sqlalche.me/e/f405)
+15:24:03 INFO SELECT MIN(reading) FROM "No Table Selected" WHERE serial_number LIKE '%%' AND test_type = ''
+15:24:03 INFO (psycopg2.errors.UndefinedTable) relation "No Table Selected" does not exist
+LINE 1: SELECT MIN(reading) FROM "No Table Selected" WHERE serial_nu...
+                                 ^
+
+[SQL: SELECT MIN(reading) FROM "No Table Selected" WHERE serial_number LIKE '%%' AND test_type = '']
+(Background on this error at: http://sqlalche.me/e/f405)
+15:24:03 INFO SELECT MAX(reading) FROM "No Table Selected" WHERE serial_number LIKE '%%' AND test_type = ''
+15:24:03 INFO (psycopg2.errors.UndefinedTable) relation "No Table Selected" does not exist
+LINE 1: SELECT MAX(reading) FROM "No Table Selected" WHERE serial_nu...
+                                 ^
+
+[SQL: SELECT MAX(reading) FROM "No Table Selected" WHERE serial_number LIKE '%%' AND test_type = '']
+(Background on this error at: http://sqlalche.me/e/f405)
+15:24:03 INFO SELECT MIN(reading) FROM "No Table Selected" WHERE serial_number LIKE '%%'
+15:24:03 INFO (psycopg2.errors.UndefinedTable) relation "No Table Selected" does not exist
+LINE 1: SELECT MIN(reading) FROM "No Table Selected" WHERE serial_nu...
+                                 ^
+
+[SQL: SELECT MIN(reading) FROM "No Table Selected" WHERE serial_number LIKE '%%']
+(Background on this error at: http://sqlalche.me/e/f405)
+15:24:03 INFO SELECT MAX(reading) FROM "No Table Selected" WHERE serial_number LIKE '%%' 
+15:24:03 INFO (psycopg2.errors.UndefinedTable) relation "No Table Selected" does not exist
+LINE 1: SELECT MAX(reading) FROM "No Table Selected" WHERE serial_nu...
+                                 ^
+
+[SQL: SELECT MAX(reading) FROM "No Table Selected" WHERE serial_number LIKE '%%' ]
+(Background on this error at: http://sqlalche.me/e/f405)
+15:24:03 INFO SELECT MIN(reading) FROM "" WHERE serial_number LIKE 'FGR60F%%'
+15:24:03 INFO (psycopg2.errors.SyntaxError) zero-length delimited identifier at or near """"
+LINE 1: SELECT MIN(reading) FROM "" WHERE serial_number LIKE 'FGR60F...
+                                 ^
+
+[SQL: SELECT MIN(reading) FROM "" WHERE serial_number LIKE 'FGR60F%%']
+(Background on this error at: http://sqlalche.me/e/f405)
+15:24:03 INFO SELECT MAX(reading) FROM "" WHERE serial_number LIKE 'FGR60F%%' 
+15:24:03 INFO (psycopg2.errors.SyntaxError) zero-length delimited identifier at or near """"
+LINE 1: SELECT MAX(reading) FROM "" WHERE serial_number LIKE 'FGR60F...
+                                 ^
+
+[SQL: SELECT MAX(reading) FROM "" WHERE serial_number LIKE 'FGR60F%%' ]
+(Background on this error at: http://sqlalche.me/e/f405)
+15:24:03 INFO SELECT MIN(reading) FROM "CPU ON-DIE thermal sensor" WHERE serial_number LIKE 'FGR60F%%'
+15:24:03 INFO SELECT MAX(reading) FROM "CPU ON-DIE thermal sensor" WHERE serial_number LIKE 'FGR60F%%' 
+15:24:03 INFO select sensor_name from "sensor_to_unit" LIMIT 1 
+15:24:03 INFO SELECT DISTINCT (test_type) from "CPU ON-DIE thermal sensor"
+15:24:03 INFO SELECT MIN(reading) FROM "CPU ON-DIE thermal sensor" WHERE serial_number LIKE 'FGR60F%%' AND test_type = ''
+15:24:03 INFO SELECT MAX(reading) FROM "CPU ON-DIE thermal sensor" WHERE serial_number LIKE 'FGR60F%%' AND test_type = ''
+15:24:03 INFO SELECT MIN(reading) FROM "CPU ON-DIE thermal sensor" WHERE serial_number LIKE 'FGR60F%%' AND test_type = 'ITS'
+15:24:03 INFO SELECT MAX(reading) FROM "CPU ON-DIE thermal sensor" WHERE serial_number LIKE 'FGR60F%%' AND test_type = 'ITS'
+15:24:03 INFO SELECT table_name FROM "main_sensor_graph"
+15:24:03 INFO (psycopg2.errors.UndefinedTable) relation "main_sensor_graph" does not exist
+LINE 1: SELECT table_name FROM "main_sensor_graph"
+                               ^
+
+[SQL: SELECT table_name FROM "main_sensor_graph"]
+(Background on this error at: http://sqlalche.me/e/f405)
+15:24:03 INFO SELECT table_name FROM "main_sensor_graph"
+15:24:04 INFO (psycopg2.errors.UndefinedTable) relation "main_sensor_graph" does not exist
+LINE 1: SELECT table_name FROM "main_sensor_graph"
+                               ^
+
+[SQL: SELECT table_name FROM "main_sensor_graph"]
+(Background on this error at: http://sqlalche.me/e/f405)
+15:24:04 INFO SELECT MIN (mycount) from (select distinct (COUNT(reading)) as mycount from "" WHERE in_log = 'True' AND serial_number LIKE '%%' GROUP BY serial_number, test_date, test_type) AS "Dummy" 
+15:24:04 INFO (psycopg2.errors.SyntaxError) zero-length delimited identifier at or near """"
+LINE 1: ...(select distinct (COUNT(reading)) as mycount from "" WHERE i...
+                                                             ^
+
+[SQL: SELECT MIN (mycount) from (select distinct (COUNT(reading)) as mycount from "" WHERE in_log = 'True' AND serial_number LIKE '%%' GROUP BY serial_number, test_date, test_type) AS "Dummy" ]
+(Background on this error at: http://sqlalche.me/e/f405)
+15:24:04 ERROR (psycopg2.errors.UndefinedTable) relation "main_blacklist" does not exist
+LINE 1: SELECT name FROM "main_blacklist" 
+                         ^
+
+[SQL: SELECT name FROM "main_blacklist" ]
+(Background on this error at: http://sqlalche.me/e/f405)
+15:24:04 INFO SELECT MIN (mycount) from (select distinct (COUNT(reading)) as mycount from "No Table Selected" WHERE in_log = 'True' AND serial_number LIKE '%%' GROUP BY serial_number, test_date, test_type) AS "Dummy" 
+15:24:04 INFO (psycopg2.errors.UndefinedTable) relation "No Table Selected" does not exist
+LINE 1: ...(select distinct (COUNT(reading)) as mycount from "No Table ...
+                                                             ^
+
+[SQL: SELECT MIN (mycount) from (select distinct (COUNT(reading)) as mycount from "No Table Selected" WHERE in_log = 'True' AND serial_number LIKE '%%' GROUP BY serial_number, test_date, test_type) AS "Dummy" ]
+(Background on this error at: http://sqlalche.me/e/f405)
+15:24:04 INFO SELECT MIN (mycount) from (select distinct (COUNT(reading)) as mycount from "" WHERE in_log = 'True' AND serial_number LIKE 'FGR60F%%' GROUP BY serial_number, test_date, test_type) AS "Dummy" 
+15:24:04 INFO (psycopg2.errors.SyntaxError) zero-length delimited identifier at or near """"
+LINE 1: ...(select distinct (COUNT(reading)) as mycount from "" WHERE i...
+                                                             ^
+
+[SQL: SELECT MIN (mycount) from (select distinct (COUNT(reading)) as mycount from "" WHERE in_log = 'True' AND serial_number LIKE 'FGR60F%%' GROUP BY serial_number, test_date, test_type) AS "Dummy" ]
+(Background on this error at: http://sqlalche.me/e/f405)
+15:24:04 INFO SELECT MIN (mycount) from (select distinct (COUNT(reading)) as mycount from "EXT_Error" WHERE in_log = 'True' AND serial_number LIKE 'FGR60F%%' GROUP BY serial_number, test_date, test_type) AS "Dummy" 
+15:24:04 INFO SELECT MAX (mycount) from (select distinct (COUNT(reading)) as mycount from "EXT_Error" WHERE in_log = 'True' AND serial_number LIKE 'FGR60F%%' GROUP BY serial_number, test_date, test_type) AS "Dummy" 
+15:24:04 INFO select sensor_name from "sensor_to_unit" LIMIT 1 
+15:24:04 INFO (psycopg2.errors.UndefinedTable) relation "sensor_to_unit" does not exist
+LINE 1: select sensor_name from "sensor_to_unit" LIMIT 1 
+                                ^
+
+[SQL: select sensor_name from "sensor_to_unit" LIMIT 1 ]
+(Background on this error at: http://sqlalche.me/e/f405)
+15:24:04 INFO SELECT table_name FROM "main_vs_graph"
+15:24:04 INFO (psycopg2.errors.UndefinedTable) relation "main_vs_graph" does not exist
+LINE 1: SELECT table_name FROM "main_vs_graph"
+                               ^
+
+[SQL: SELECT table_name FROM "main_vs_graph"]
+(Background on this error at: http://sqlalche.me/e/f405)
+15:24:04 INFO select sensor_name from "sensor_to_unit" LIMIT 1 
+15:24:04 INFO SELECT DISTINCT (test_type) from "CPU ON-DIE thermal sensor"
+15:24:04 INFO SELECT table_name FROM "main_vs_graph"
+15:24:04 INFO SELECT MIN(reading) FROM "" WHERE serial_number LIKE '%%' AND test_type = 'ITS'
+15:24:04 INFO (psycopg2.errors.SyntaxError) zero-length delimited identifier at or near """"
+LINE 1: SELECT MIN(reading) FROM "" WHERE serial_number LIKE '%' AND...
+                                 ^
+
+[SQL: SELECT MIN(reading) FROM "" WHERE serial_number LIKE '%%' AND test_type = 'ITS']
+(Background on this error at: http://sqlalche.me/e/f405)
+15:24:04 INFO SELECT MAX(reading) FROM "" WHERE serial_number LIKE '%%' AND test_type = 'ITS'
+15:24:04 INFO (psycopg2.errors.SyntaxError) zero-length delimited identifier at or near """"
+LINE 1: SELECT MAX(reading) FROM "" WHERE serial_number LIKE '%' AND...
+                                 ^
+
+[SQL: SELECT MAX(reading) FROM "" WHERE serial_number LIKE '%%' AND test_type = 'ITS']
+(Background on this error at: http://sqlalche.me/e/f405)
+15:24:04 INFO SELECT MIN(reading) FROM "No Table Selected" WHERE serial_number LIKE '%%' AND test_type = 'ITS'
+15:24:04 INFO (psycopg2.errors.UndefinedTable) relation "No Table Selected" does not exist
+LINE 1: SELECT MIN(reading) FROM "No Table Selected" WHERE serial_nu...
+                                 ^
+
+[SQL: SELECT MIN(reading) FROM "No Table Selected" WHERE serial_number LIKE '%%' AND test_type = 'ITS']
+(Background on this error at: http://sqlalche.me/e/f405)
+15:24:04 INFO SELECT MAX(reading) FROM "No Table Selected" WHERE serial_number LIKE '%%' AND test_type = 'ITS'
+15:24:04 INFO (psycopg2.errors.UndefinedTable) relation "No Table Selected" does not exist
+LINE 1: SELECT MAX(reading) FROM "No Table Selected" WHERE serial_nu...
+                                 ^
+
+[SQL: SELECT MAX(reading) FROM "No Table Selected" WHERE serial_number LIKE '%%' AND test_type = 'ITS']
+(Background on this error at: http://sqlalche.me/e/f405)
+15:24:04 INFO SELECT MIN(reading) FROM "" WHERE serial_number LIKE '%%' AND test_type = 'ITS'
+15:24:04 INFO (psycopg2.errors.SyntaxError) zero-length delimited identifier at or near """"
+LINE 1: SELECT MIN(reading) FROM "" WHERE serial_number LIKE '%' AND...
+                                 ^
+
+[SQL: SELECT MIN(reading) FROM "" WHERE serial_number LIKE '%%' AND test_type = 'ITS']
+(Background on this error at: http://sqlalche.me/e/f405)
+15:24:04 INFO SELECT MAX(reading) FROM "" WHERE serial_number LIKE '%%' AND test_type = 'ITS'
+15:24:04 INFO (psycopg2.errors.SyntaxError) zero-length delimited identifier at or near """"
+LINE 1: SELECT MAX(reading) FROM "" WHERE serial_number LIKE '%' AND...
+                                 ^
+
+[SQL: SELECT MAX(reading) FROM "" WHERE serial_number LIKE '%%' AND test_type = 'ITS']
+(Background on this error at: http://sqlalche.me/e/f405)
+15:24:04 INFO SELECT MIN(reading) FROM "No Table Selected" WHERE serial_number LIKE '%%' AND test_type = 'ITS'
+15:24:04 INFO (psycopg2.errors.UndefinedTable) relation "No Table Selected" does not exist
+LINE 1: SELECT MIN(reading) FROM "No Table Selected" WHERE serial_nu...
+                                 ^
+
+[SQL: SELECT MIN(reading) FROM "No Table Selected" WHERE serial_number LIKE '%%' AND test_type = 'ITS']
+(Background on this error at: http://sqlalche.me/e/f405)
+15:24:04 INFO SELECT MAX(reading) FROM "No Table Selected" WHERE serial_number LIKE '%%' AND test_type = 'ITS'
+15:24:04 INFO (psycopg2.errors.UndefinedTable) relation "No Table Selected" does not exist
+LINE 1: SELECT MAX(reading) FROM "No Table Selected" WHERE serial_nu...
+                                 ^
+
+[SQL: SELECT MAX(reading) FROM "No Table Selected" WHERE serial_number LIKE '%%' AND test_type = 'ITS']
+(Background on this error at: http://sqlalche.me/e/f405)
+15:24:04 INFO select sensor_name from "sensor_to_unit" LIMIT 1 
+15:24:04 INFO (psycopg2.errors.UndefinedTable) relation "sensor_to_unit" does not exist
+LINE 1: select sensor_name from "sensor_to_unit" LIMIT 1 
+                                ^
+
+[SQL: select sensor_name from "sensor_to_unit" LIMIT 1 ]
+(Background on this error at: http://sqlalche.me/e/f405)
+15:24:04 INFO SELECT MIN(reading) FROM "No Table Selected" WHERE serial_number LIKE '%%' AND test_type = ''
+15:24:04 INFO (psycopg2.errors.UndefinedTable) relation "No Table Selected" does not exist
+LINE 1: SELECT MIN(reading) FROM "No Table Selected" WHERE serial_nu...
+                                 ^
+
+[SQL: SELECT MIN(reading) FROM "No Table Selected" WHERE serial_number LIKE '%%' AND test_type = '']
+(Background on this error at: http://sqlalche.me/e/f405)
+15:24:04 INFO SELECT MAX(reading) FROM "No Table Selected" WHERE serial_number LIKE '%%' AND test_type = ''
+15:24:04 INFO (psycopg2.errors.UndefinedTable) relation "No Table Selected" does not exist
+LINE 1: SELECT MAX(reading) FROM "No Table Selected" WHERE serial_nu...
+                                 ^
+
+[SQL: SELECT MAX(reading) FROM "No Table Selected" WHERE serial_number LIKE '%%' AND test_type = '']
+(Background on this error at: http://sqlalche.me/e/f405)
+15:24:04 INFO SELECT MIN(reading) FROM "No Table Selected" WHERE serial_number LIKE '%%' AND test_type = ''
+15:24:04 INFO (psycopg2.errors.UndefinedTable) relation "No Table Selected" does not exist
+LINE 1: SELECT MIN(reading) FROM "No Table Selected" WHERE serial_nu...
+                                 ^
+
+[SQL: SELECT MIN(reading) FROM "No Table Selected" WHERE serial_number LIKE '%%' AND test_type = '']
+(Background on this error at: http://sqlalche.me/e/f405)
+15:24:04 INFO SELECT MAX(reading) FROM "No Table Selected" WHERE serial_number LIKE '%%' AND test_type = ''
+15:24:04 INFO (psycopg2.errors.UndefinedTable) relation "No Table Selected" does not exist
+LINE 1: SELECT MAX(reading) FROM "No Table Selected" WHERE serial_nu...
+                                 ^
+
+[SQL: SELECT MAX(reading) FROM "No Table Selected" WHERE serial_number LIKE '%%' AND test_type = '']
+(Background on this error at: http://sqlalche.me/e/f405)
+15:24:04 INFO SELECT MIN(reading) FROM "No Table Selected" WHERE serial_number LIKE '%%'
+15:24:04 INFO (psycopg2.errors.UndefinedTable) relation "No Table Selected" does not exist
+LINE 1: SELECT MIN(reading) FROM "No Table Selected" WHERE serial_nu...
+                                 ^
+
+[SQL: SELECT MIN(reading) FROM "No Table Selected" WHERE serial_number LIKE '%%']
+(Background on this error at: http://sqlalche.me/e/f405)
+15:24:04 INFO SELECT MAX(reading) FROM "No Table Selected" WHERE serial_number LIKE '%%' 
+15:24:04 INFO (psycopg2.errors.UndefinedTable) relation "No Table Selected" does not exist
+LINE 1: SELECT MAX(reading) FROM "No Table Selected" WHERE serial_nu...
+                                 ^
+
+[SQL: SELECT MAX(reading) FROM "No Table Selected" WHERE serial_number LIKE '%%' ]
+(Background on this error at: http://sqlalche.me/e/f405)
+15:24:04 INFO SELECT MIN(reading) FROM "No Table Selected" WHERE serial_number LIKE '%%'
+15:24:04 INFO (psycopg2.errors.UndefinedTable) relation "No Table Selected" does not exist
+LINE 1: SELECT MIN(reading) FROM "No Table Selected" WHERE serial_nu...
+                                 ^
+
+[SQL: SELECT MIN(reading) FROM "No Table Selected" WHERE serial_number LIKE '%%']
+(Background on this error at: http://sqlalche.me/e/f405)
+15:24:04 INFO SELECT MAX(reading) FROM "No Table Selected" WHERE serial_number LIKE '%%' 
+15:24:04 INFO (psycopg2.errors.UndefinedTable) relation "No Table Selected" does not exist
+LINE 1: SELECT MAX(reading) FROM "No Table Selected" WHERE serial_nu...
+                                 ^
+
+[SQL: SELECT MAX(reading) FROM "No Table Selected" WHERE serial_number LIKE '%%' ]
+(Background on this error at: http://sqlalche.me/e/f405)
+15:24:04 INFO SELECT MIN(reading) FROM "" WHERE serial_number LIKE 'FGR60F%%'
+15:24:04 INFO (psycopg2.errors.SyntaxError) zero-length delimited identifier at or near """"
+LINE 1: SELECT MIN(reading) FROM "" WHERE serial_number LIKE 'FGR60F...
+                                 ^
+
+[SQL: SELECT MIN(reading) FROM "" WHERE serial_number LIKE 'FGR60F%%']
+(Background on this error at: http://sqlalche.me/e/f405)
+15:24:04 INFO SELECT MAX(reading) FROM "" WHERE serial_number LIKE 'FGR60F%%' 
+15:24:04 INFO (psycopg2.errors.SyntaxError) zero-length delimited identifier at or near """"
+LINE 1: SELECT MAX(reading) FROM "" WHERE serial_number LIKE 'FGR60F...
+                                 ^
+
+[SQL: SELECT MAX(reading) FROM "" WHERE serial_number LIKE 'FGR60F%%' ]
+(Background on this error at: http://sqlalche.me/e/f405)
+15:24:04 INFO SELECT MIN(reading) FROM "CPU ON-DIE thermal sensor" WHERE serial_number LIKE 'FGR60F%%'
+15:24:04 INFO SELECT MAX(reading) FROM "CPU ON-DIE thermal sensor" WHERE serial_number LIKE 'FGR60F%%' 
+15:24:04 INFO SELECT MIN(reading) FROM "" WHERE serial_number LIKE 'FGR60F%%'
+15:24:04 INFO (psycopg2.errors.SyntaxError) zero-length delimited identifier at or near """"
+LINE 1: SELECT MIN(reading) FROM "" WHERE serial_number LIKE 'FGR60F...
+                                 ^
+
+[SQL: SELECT MIN(reading) FROM "" WHERE serial_number LIKE 'FGR60F%%']
+(Background on this error at: http://sqlalche.me/e/f405)
+15:24:04 INFO SELECT MAX(reading) FROM "" WHERE serial_number LIKE 'FGR60F%%' 
+15:24:04 INFO (psycopg2.errors.SyntaxError) zero-length delimited identifier at or near """"
+LINE 1: SELECT MAX(reading) FROM "" WHERE serial_number LIKE 'FGR60F...
+                                 ^
+
+[SQL: SELECT MAX(reading) FROM "" WHERE serial_number LIKE 'FGR60F%%' ]
+(Background on this error at: http://sqlalche.me/e/f405)
+15:24:04 INFO SELECT MIN(reading) FROM "CPU ON-DIE thermal sensor" WHERE serial_number LIKE 'FGR60F%%'
+15:24:04 INFO SELECT MAX(reading) FROM "CPU ON-DIE thermal sensor" WHERE serial_number LIKE 'FGR60F%%' 
+15:24:04 INFO select sensor_name from "sensor_to_unit" LIMIT 1 
+15:24:04 INFO SELECT DISTINCT (test_type) from "CPU ON-DIE thermal sensor"
+15:24:04 INFO SELECT MIN(reading) FROM "CPU ON-DIE thermal sensor" WHERE serial_number LIKE 'FGR60F%%' AND test_type = ''
+15:24:04 INFO SELECT MAX(reading) FROM "CPU ON-DIE thermal sensor" WHERE serial_number LIKE 'FGR60F%%' AND test_type = ''
+15:24:04 INFO SELECT MIN(reading) FROM "CPU ON-DIE thermal sensor" WHERE serial_number LIKE 'FGR60F%%' AND test_type = ''
+15:24:04 INFO SELECT MAX(reading) FROM "CPU ON-DIE thermal sensor" WHERE serial_number LIKE 'FGR60F%%' AND test_type = ''
+15:24:04 INFO SELECT MIN(reading) FROM "CPU ON-DIE thermal sensor" WHERE serial_number LIKE 'FGR60F%%' AND test_type = 'ITS'
+15:24:04 INFO SELECT MAX(reading) FROM "CPU ON-DIE thermal sensor" WHERE serial_number LIKE 'FGR60F%%' AND test_type = 'ITS'
+15:24:04 INFO SELECT MIN(reading) FROM "CPU ON-DIE thermal sensor" WHERE serial_number LIKE 'FGR60F%%' AND test_type = 'ITS'
+15:24:04 INFO SELECT MAX(reading) FROM "CPU ON-DIE thermal sensor" WHERE serial_number LIKE 'FGR60F%%' AND test_type = 'ITS'
+15:24:13 INFO SELECT MIN(reading) FROM "" WHERE serial_number LIKE 'FG180F%%' AND test_type = 'ITS'
+15:24:13 INFO (psycopg2.errors.SyntaxError) zero-length delimited identifier at or near """"
+LINE 1: SELECT MIN(reading) FROM "" WHERE serial_number LIKE 'FG180F...
+                                 ^
+
+[SQL: SELECT MIN(reading) FROM "" WHERE serial_number LIKE 'FG180F%%' AND test_type = 'ITS']
+(Background on this error at: http://sqlalche.me/e/f405)
+15:24:13 INFO SELECT MAX(reading) FROM "" WHERE serial_number LIKE 'FG180F%%' AND test_type = 'ITS'
+15:24:13 INFO (psycopg2.errors.SyntaxError) zero-length delimited identifier at or near """"
+LINE 1: SELECT MAX(reading) FROM "" WHERE serial_number LIKE 'FG180F...
+                                 ^
+
+[SQL: SELECT MAX(reading) FROM "" WHERE serial_number LIKE 'FG180F%%' AND test_type = 'ITS']
+(Background on this error at: http://sqlalche.me/e/f405)
+15:24:13 INFO SELECT MIN(reading) FROM "3.3V_CP9" WHERE serial_number LIKE 'FG180F%%' AND test_type = 'ITS'
+15:24:13 INFO SELECT MAX(reading) FROM "3.3V_CP9" WHERE serial_number LIKE 'FG180F%%' AND test_type = 'ITS'
+15:24:13 INFO select sensor_name from "sensor_to_unit" LIMIT 1 
+15:24:13 INFO SELECT DISTINCT (test_type) from "CPU0 PVCCIO IOUT"
+15:24:13 INFO SELECT MIN(reading) FROM "3.3V_CP9" WHERE serial_number LIKE 'FG180F%%' AND test_type = ''
+15:24:13 INFO SELECT MAX(reading) FROM "3.3V_CP9" WHERE serial_number LIKE 'FG180F%%' AND test_type = ''
+15:24:13 INFO SELECT MIN(reading) FROM "3.3V_CP9" WHERE serial_number LIKE 'FG180F%%' AND test_type = 'IQC'
+15:24:13 INFO SELECT MAX(reading) FROM "3.3V_CP9" WHERE serial_number LIKE 'FG180F%%' AND test_type = 'IQC'
