@@ -1038,3 +1038,135 @@ LINE 1: SELECT MAX(reading) FROM "" WHERE serial_number LIKE 'FG180F...
 15:24:13 INFO SELECT MAX(reading) FROM "3.3V_CP9" WHERE serial_number LIKE 'FG180F%%' AND test_type = ''
 15:24:13 INFO SELECT MIN(reading) FROM "3.3V_CP9" WHERE serial_number LIKE 'FG180F%%' AND test_type = 'IQC'
 15:24:13 INFO SELECT MAX(reading) FROM "3.3V_CP9" WHERE serial_number LIKE 'FG180F%%' AND test_type = 'IQC'
+16:48:23 INFO select sensor_name from "sensor_to_unit" LIMIT 1 
+16:48:23 INFO SELECT DISTINCT (test_type) from "CPU ON-DIE thermal sensor"
+16:48:23 INFO SELECT table_name FROM INFORMATION_SCHEMA.views WHERE table_schema = ANY (current_schemas(false));
+16:48:23 INFO SELECT MIN(reading) FROM "CPU ON-DIE thermal sensor" WHERE serial_number LIKE 'FGR60F%%' AND test_type = 'ITS'
+16:48:23 INFO SELECT MAX(reading) FROM "CPU ON-DIE thermal sensor" WHERE serial_number LIKE 'FGR60F%%' AND test_type = 'ITS'
+16:48:23 INFO SELECT table_name FROM "main_sensor_graph"
+16:48:23 INFO (psycopg2.errors.UndefinedTable) relation "main_sensor_graph" does not exist
+LINE 1: SELECT table_name FROM "main_sensor_graph"
+                               ^
+
+[SQL: SELECT table_name FROM "main_sensor_graph"]
+(Background on this error at: http://sqlalche.me/e/f405)
+16:48:23 INFO SELECT MIN (mycount) from (select distinct (COUNT(reading)) as mycount from "EXT_Error" WHERE in_log = 'True' AND serial_number LIKE 'FGR60F%%' GROUP BY serial_number, test_date, test_type) AS "Dummy" 
+16:48:24 INFO SELECT MAX (mycount) from (select distinct (COUNT(reading)) as mycount from "EXT_Error" WHERE in_log = 'True' AND serial_number LIKE 'FGR60F%%' GROUP BY serial_number, test_date, test_type) AS "Dummy" 
+16:48:24 INFO SELECT table_name FROM "main_vs_graph"
+16:48:24 INFO select sensor_name from "sensor_to_unit" LIMIT 1 
+16:48:24 INFO SELECT DISTINCT (test_type) from "CPU ON-DIE thermal sensor"
+16:48:24 INFO SELECT table_name FROM "main_vs_graph"
+16:48:24 INFO select sensor_name from "sensor_to_unit" LIMIT 1 
+16:48:24 INFO SELECT DISTINCT (test_type) from "CPU ON-DIE thermal sensor"
+16:48:24 INFO SELECT MIN(reading) FROM "CPU ON-DIE thermal sensor" WHERE serial_number LIKE 'FGR60F%%' AND test_type = 'ITS'
+16:48:24 INFO SELECT MAX(reading) FROM "CPU ON-DIE thermal sensor" WHERE serial_number LIKE 'FGR60F%%' AND test_type = 'ITS'
+16:48:24 INFO SELECT MIN(reading) FROM "CPU ON-DIE thermal sensor" WHERE serial_number LIKE 'FGR60F%%' AND test_type = 'ITS'
+16:48:24 INFO SELECT MAX(reading) FROM "CPU ON-DIE thermal sensor" WHERE serial_number LIKE 'FGR60F%%' AND test_type = 'ITS'
+16:48:36 INFO SELECT MIN (mycount) from (select distinct (COUNT(reading)) as mycount from "Unable to handle kernel" WHERE in_log = 'True' AND serial_number LIKE 'FGR60F%%' GROUP BY serial_number, test_date, test_type) AS "Dummy" 
+16:48:36 INFO SELECT MAX (mycount) from (select distinct (COUNT(reading)) as mycount from "Unable to handle kernel" WHERE in_log = 'True' AND serial_number LIKE 'FGR60F%%' GROUP BY serial_number, test_date, test_type) AS "Dummy" 
+16:48:41 INFO select sensor_name from "sensor_to_unit" LIMIT 1 
+16:48:41 INFO SELECT DISTINCT (test_type) from "CPU0 PVCCIO IOUT"
+16:48:41 INFO SELECT table_name FROM "main_vs_graph"
+16:48:41 INFO (psycopg2.errors.UndefinedTable) relation "main_vs_graph" does not exist
+LINE 1: SELECT table_name FROM "main_vs_graph"
+                               ^
+
+[SQL: SELECT table_name FROM "main_vs_graph"]
+(Background on this error at: http://sqlalche.me/e/f405)
+17:12:49 INFO SELECT MIN(reading) FROM "CPU ON-DIE thermal sensor" WHERE serial_number LIKE 'FGR60F%%' AND test_type = 'HTS'
+17:12:49 INFO (psycopg2.errors.UndefinedTable) relation "CPU ON-DIE thermal sensor" does not exist
+LINE 1: SELECT MIN(reading) FROM "CPU ON-DIE thermal sensor" WHERE s...
+                                 ^
+
+[SQL: SELECT MIN(reading) FROM "CPU ON-DIE thermal sensor" WHERE serial_number LIKE 'FGR60F%%' AND test_type = 'HTS']
+(Background on this error at: http://sqlalche.me/e/f405)
+17:12:49 INFO SELECT MAX(reading) FROM "CPU ON-DIE thermal sensor" WHERE serial_number LIKE 'FGR60F%%' AND test_type = 'HTS'
+17:12:49 INFO (psycopg2.errors.UndefinedTable) relation "CPU ON-DIE thermal sensor" does not exist
+LINE 1: SELECT MAX(reading) FROM "CPU ON-DIE thermal sensor" WHERE s...
+                                 ^
+
+[SQL: SELECT MAX(reading) FROM "CPU ON-DIE thermal sensor" WHERE serial_number LIKE 'FGR60F%%' AND test_type = 'HTS']
+(Background on this error at: http://sqlalche.me/e/f405)
+17:12:52 INFO SELECT "CPU ON-DIE thermal sensor".serial_number AS "Serial Number","CPU ON-DIE thermal sensor".test_date, "CPU ON-DIE thermal sensor".test_type, "CPU ON-DIE thermal sensor".line_number AS "CPU ON-DIE thermal sensor_Line_Number","CPU ON-DIE thermal sensor".alarm AS "CPU ON-DIE thermal sensor_Alarm","CPU ON-DIE thermal sensor".reading AS "CPU ON-DIE thermal sensor_Reading"FROM "CPU ON-DIE thermal sensor" WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".test_date >= '1999-01-01 00:00:00' AND "CPU ON-DIE thermal sensor".test_date <= '2020-07-25 23:59:59'AND "CPU ON-DIE thermal sensor".test_type = 'HTS'AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%'ORDER BY reading
+17:12:52 INFO (psycopg2.errors.UndefinedTable) relation "CPU ON-DIE thermal sensor" does not exist
+LINE 1: ...eading AS "CPU ON-DIE thermal sensor_Reading"FROM "CPU ON-DI...
+                                                             ^
+
+[SQL: SELECT "CPU ON-DIE thermal sensor".serial_number AS "Serial Number","CPU ON-DIE thermal sensor".test_date, "CPU ON-DIE thermal sensor".test_type, "CPU ON-DIE thermal sensor".line_number AS "CPU ON-DIE thermal sensor_Line_Number","CPU ON-DIE thermal sensor".alarm AS "CPU ON-DIE thermal sensor_Alarm","CPU ON-DIE thermal sensor".reading AS "CPU ON-DIE thermal sensor_Reading"FROM "CPU ON-DIE thermal sensor" WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".test_date >= '1999-01-01 00:00:00' AND "CPU ON-DIE thermal sensor".test_date <= '2020-07-25 23:59:59'AND "CPU ON-DIE thermal sensor".test_type = 'HTS'AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%'ORDER BY reading]
+(Background on this error at: http://sqlalche.me/e/f405)
+17:13:04 INFO SELECT MIN(reading) FROM "CPU ON-DIE thermal sensor" WHERE serial_number LIKE 'FGR60F%%'
+17:13:04 INFO (psycopg2.errors.UndefinedTable) relation "CPU ON-DIE thermal sensor" does not exist
+LINE 1: SELECT MIN(reading) FROM "CPU ON-DIE thermal sensor" WHERE s...
+                                 ^
+
+[SQL: SELECT MIN(reading) FROM "CPU ON-DIE thermal sensor" WHERE serial_number LIKE 'FGR60F%%']
+(Background on this error at: http://sqlalche.me/e/f405)
+17:13:04 INFO SELECT MAX(reading) FROM "CPU ON-DIE thermal sensor" WHERE serial_number LIKE 'FGR60F%%' 
+17:13:04 INFO (psycopg2.errors.UndefinedTable) relation "CPU ON-DIE thermal sensor" does not exist
+LINE 1: SELECT MAX(reading) FROM "CPU ON-DIE thermal sensor" WHERE s...
+                                 ^
+
+[SQL: SELECT MAX(reading) FROM "CPU ON-DIE thermal sensor" WHERE serial_number LIKE 'FGR60F%%' ]
+(Background on this error at: http://sqlalche.me/e/f405)
+17:13:08 INFO SELECT "CPU ON-DIE thermal sensor".serial_number AS "Serial Number","CPU ON-DIE thermal sensor".test_date, "CPU ON-DIE thermal sensor".test_type, "CPU ON-DIE thermal sensor".line_number AS "CPU ON-DIE thermal sensor_Line_Number","CPU ON-DIE thermal sensor".alarm AS "CPU ON-DIE thermal sensor_Alarm","CPU ON-DIE thermal sensor".reading AS "CPU ON-DIE thermal sensor_Reading"FROM "CPU ON-DIE thermal sensor" WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".test_date >= '1999-01-01 00:00:00' AND "CPU ON-DIE thermal sensor".test_date <= '2020-07-25 23:59:59'AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%'ORDER BY reading
+17:13:08 INFO (psycopg2.errors.UndefinedTable) relation "CPU ON-DIE thermal sensor" does not exist
+LINE 1: ...eading AS "CPU ON-DIE thermal sensor_Reading"FROM "CPU ON-DI...
+                                                             ^
+
+[SQL: SELECT "CPU ON-DIE thermal sensor".serial_number AS "Serial Number","CPU ON-DIE thermal sensor".test_date, "CPU ON-DIE thermal sensor".test_type, "CPU ON-DIE thermal sensor".line_number AS "CPU ON-DIE thermal sensor_Line_Number","CPU ON-DIE thermal sensor".alarm AS "CPU ON-DIE thermal sensor_Alarm","CPU ON-DIE thermal sensor".reading AS "CPU ON-DIE thermal sensor_Reading"FROM "CPU ON-DIE thermal sensor" WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".test_date >= '1999-01-01 00:00:00' AND "CPU ON-DIE thermal sensor".test_date <= '2020-07-25 23:59:59'AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%'ORDER BY reading]
+(Background on this error at: http://sqlalche.me/e/f405)
+17:13:15 INFO SELECT "CPU ON-DIE thermal sensor".serial_number AS "Serial Number","CPU ON-DIE thermal sensor".test_date, "CPU ON-DIE thermal sensor".test_type, "CPU ON-DIE thermal sensor".line_number AS "CPU ON-DIE thermal sensor_Line_Number","CPU ON-DIE thermal sensor".alarm AS "CPU ON-DIE thermal sensor_Alarm","CPU ON-DIE thermal sensor".reading AS "CPU ON-DIE thermal sensor_Reading"FROM "CPU ON-DIE thermal sensor" WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".test_date >= '1999-01-01 00:00:00' AND "CPU ON-DIE thermal sensor".test_date <= '2020-07-25 23:59:59'AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%'ORDER BY reading
+17:13:15 INFO (psycopg2.errors.UndefinedTable) relation "CPU ON-DIE thermal sensor" does not exist
+LINE 1: ...eading AS "CPU ON-DIE thermal sensor_Reading"FROM "CPU ON-DI...
+                                                             ^
+
+[SQL: SELECT "CPU ON-DIE thermal sensor".serial_number AS "Serial Number","CPU ON-DIE thermal sensor".test_date, "CPU ON-DIE thermal sensor".test_type, "CPU ON-DIE thermal sensor".line_number AS "CPU ON-DIE thermal sensor_Line_Number","CPU ON-DIE thermal sensor".alarm AS "CPU ON-DIE thermal sensor_Alarm","CPU ON-DIE thermal sensor".reading AS "CPU ON-DIE thermal sensor_Reading"FROM "CPU ON-DIE thermal sensor" WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".test_date >= '1999-01-01 00:00:00' AND "CPU ON-DIE thermal sensor".test_date <= '2020-07-25 23:59:59'AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%'ORDER BY reading]
+(Background on this error at: http://sqlalche.me/e/f405)
+17:13:21 INFO SELECT "CPU ON-DIE thermal sensor".serial_number AS "Serial Number","CPU ON-DIE thermal sensor".test_date, "CPU ON-DIE thermal sensor".test_type, "CPU ON-DIE thermal sensor".line_number AS "CPU ON-DIE thermal sensor_Line_Number","CPU ON-DIE thermal sensor".alarm AS "CPU ON-DIE thermal sensor_Alarm","CPU ON-DIE thermal sensor".reading AS "CPU ON-DIE thermal sensor_Reading"FROM "CPU ON-DIE thermal sensor" WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".test_date >= '1999-01-01 00:00:00' AND "CPU ON-DIE thermal sensor".test_date <= '2021-07-25 23:59:59'AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%'ORDER BY reading
+17:13:21 INFO (psycopg2.errors.UndefinedTable) relation "CPU ON-DIE thermal sensor" does not exist
+LINE 1: ...eading AS "CPU ON-DIE thermal sensor_Reading"FROM "CPU ON-DI...
+                                                             ^
+
+[SQL: SELECT "CPU ON-DIE thermal sensor".serial_number AS "Serial Number","CPU ON-DIE thermal sensor".test_date, "CPU ON-DIE thermal sensor".test_type, "CPU ON-DIE thermal sensor".line_number AS "CPU ON-DIE thermal sensor_Line_Number","CPU ON-DIE thermal sensor".alarm AS "CPU ON-DIE thermal sensor_Alarm","CPU ON-DIE thermal sensor".reading AS "CPU ON-DIE thermal sensor_Reading"FROM "CPU ON-DIE thermal sensor" WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".test_date >= '1999-01-01 00:00:00' AND "CPU ON-DIE thermal sensor".test_date <= '2021-07-25 23:59:59'AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%'ORDER BY reading]
+(Background on this error at: http://sqlalche.me/e/f405)
+17:13:25 INFO SELECT COLUMN_NAME FROM information_schema.COLUMNS WHERE TABLE_NAME = 'CPU ON-DIE thermal sensor_VS_PHY B50182 temp sensor_All';
+17:13:25 INFO SELECT * FROM "CPU ON-DIE thermal sensor_VS_PHY B50182 temp sensor_All";
+17:13:25 INFO (psycopg2.errors.UndefinedTable) relation "CPU ON-DIE thermal sensor_VS_PHY B50182 temp sensor_All" does not exist
+LINE 1: SELECT * FROM "CPU ON-DIE thermal sensor_VS_PHY B50182 temp ...
+                      ^
+
+[SQL: SELECT * FROM "CPU ON-DIE thermal sensor_VS_PHY B50182 temp sensor_All";]
+(Background on this error at: http://sqlalche.me/e/f405)
+17:13:32 INFO SELECT COLUMN_NAME FROM information_schema.COLUMNS WHERE TABLE_NAME = 'PHY B50182 temp sensor_VS_CPU ON-DIE thermal sensor_ITS';
+17:13:32 INFO SELECT * FROM "PHY B50182 temp sensor_VS_CPU ON-DIE thermal sensor_ITS";
+17:13:32 INFO (psycopg2.errors.UndefinedTable) relation "PHY B50182 temp sensor_VS_CPU ON-DIE thermal sensor_ITS" does not exist
+LINE 1: SELECT * FROM "PHY B50182 temp sensor_VS_CPU ON-DIE thermal ...
+                      ^
+
+[SQL: SELECT * FROM "PHY B50182 temp sensor_VS_CPU ON-DIE thermal sensor_ITS";]
+(Background on this error at: http://sqlalche.me/e/f405)
+17:14:01 INFO select sensor_name from "sensor_to_unit" LIMIT 1 
+17:14:01 INFO SELECT DISTINCT (test_type) from "CPU ON-DIE thermal sensor"
+17:14:01 INFO SELECT table_name FROM INFORMATION_SCHEMA.views WHERE table_schema = ANY (current_schemas(false));
+17:14:01 INFO SELECT MIN(reading) FROM "CPU ON-DIE thermal sensor" WHERE serial_number LIKE 'FGR60F%%' AND test_type = 'ITS'
+17:14:01 INFO SELECT MAX(reading) FROM "CPU ON-DIE thermal sensor" WHERE serial_number LIKE 'FGR60F%%' AND test_type = 'ITS'
+17:14:01 INFO SELECT table_name FROM "main_sensor_graph"
+17:14:01 INFO (psycopg2.errors.UndefinedTable) relation "main_sensor_graph" does not exist
+LINE 1: SELECT table_name FROM "main_sensor_graph"
+                               ^
+
+[SQL: SELECT table_name FROM "main_sensor_graph"]
+(Background on this error at: http://sqlalche.me/e/f405)
+17:14:02 INFO SELECT MIN (mycount) from (select distinct (COUNT(reading)) as mycount from "EXT_Error" WHERE in_log = 'True' AND serial_number LIKE 'FGR60F%%' GROUP BY serial_number, test_date, test_type) AS "Dummy" 
+17:14:02 INFO SELECT MAX (mycount) from (select distinct (COUNT(reading)) as mycount from "EXT_Error" WHERE in_log = 'True' AND serial_number LIKE 'FGR60F%%' GROUP BY serial_number, test_date, test_type) AS "Dummy" 
+17:14:02 INFO SELECT table_name FROM "main_vs_graph"
+17:14:02 INFO select sensor_name from "sensor_to_unit" LIMIT 1 
+17:14:02 INFO SELECT DISTINCT (test_type) from "CPU ON-DIE thermal sensor"
+17:14:02 INFO SELECT table_name FROM "main_vs_graph"
+17:14:02 INFO select sensor_name from "sensor_to_unit" LIMIT 1 
+17:14:02 INFO SELECT DISTINCT (test_type) from "CPU ON-DIE thermal sensor"
+17:14:02 INFO SELECT MIN(reading) FROM "CPU ON-DIE thermal sensor" WHERE serial_number LIKE 'FGR60F%%' AND test_type = 'ITS'
+17:14:02 INFO SELECT MAX(reading) FROM "CPU ON-DIE thermal sensor" WHERE serial_number LIKE 'FGR60F%%' AND test_type = 'ITS'
+17:14:02 INFO SELECT MIN(reading) FROM "CPU ON-DIE thermal sensor" WHERE serial_number LIKE 'FGR60F%%' AND test_type = 'ITS'
+17:14:02 INFO SELECT MAX(reading) FROM "CPU ON-DIE thermal sensor" WHERE serial_number LIKE 'FGR60F%%' AND test_type = 'ITS'
+17:14:16 INFO SELECT "CPU ON-DIE thermal sensor".serial_number AS "Serial Number","CPU ON-DIE thermal sensor".test_date, "CPU ON-DIE thermal sensor".test_type, "CPU ON-DIE thermal sensor".line_number AS "CPU ON-DIE thermal sensor_Line_Number","CPU ON-DIE thermal sensor".alarm AS "CPU ON-DIE thermal sensor_Alarm","CPU ON-DIE thermal sensor".reading AS "CPU ON-DIE thermal sensor_Reading"FROM "CPU ON-DIE thermal sensor" WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".test_date >= '1999-01-01 00:00:00' AND "CPU ON-DIE thermal sensor".test_date <= '2020-06-25 23:59:59'AND "CPU ON-DIE thermal sensor".test_type = 'ITS'AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%'ORDER BY reading
