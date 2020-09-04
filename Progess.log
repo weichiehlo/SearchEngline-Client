@@ -1170,3 +1170,219 @@ LINE 1: SELECT table_name FROM "main_sensor_graph"
 17:14:02 INFO SELECT MIN(reading) FROM "CPU ON-DIE thermal sensor" WHERE serial_number LIKE 'FGR60F%%' AND test_type = 'ITS'
 17:14:02 INFO SELECT MAX(reading) FROM "CPU ON-DIE thermal sensor" WHERE serial_number LIKE 'FGR60F%%' AND test_type = 'ITS'
 17:14:16 INFO SELECT "CPU ON-DIE thermal sensor".serial_number AS "Serial Number","CPU ON-DIE thermal sensor".test_date, "CPU ON-DIE thermal sensor".test_type, "CPU ON-DIE thermal sensor".line_number AS "CPU ON-DIE thermal sensor_Line_Number","CPU ON-DIE thermal sensor".alarm AS "CPU ON-DIE thermal sensor_Alarm","CPU ON-DIE thermal sensor".reading AS "CPU ON-DIE thermal sensor_Reading"FROM "CPU ON-DIE thermal sensor" WHERE "CPU ON-DIE thermal sensor".reading IS NOT NULL AND "CPU ON-DIE thermal sensor".test_date >= '1999-01-01 00:00:00' AND "CPU ON-DIE thermal sensor".test_date <= '2020-06-25 23:59:59'AND "CPU ON-DIE thermal sensor".test_type = 'ITS'AND "CPU ON-DIE thermal sensor".serial_number LIKE 'FGR60F%%'ORDER BY reading
+15:43:22 INFO select sensor_name from "sensor_to_unit" LIMIT 1 
+15:43:22 INFO SELECT DISTINCT (test_type) from "DISK13 187 Reported_Uncorrect "
+15:43:22 INFO SELECT table_name FROM INFORMATION_SCHEMA.views WHERE table_schema = ANY (current_schemas(false));
+15:43:22 INFO SELECT MIN(reading) FROM "DISK0 187 Reported_Uncorrect " WHERE serial_number LIKE 'FL-3KF%%' AND test_type = 'IQC'
+15:43:22 INFO SELECT MAX(reading) FROM "DISK0 187 Reported_Uncorrect " WHERE serial_number LIKE 'FL-3KF%%' AND test_type = 'IQC'
+15:43:22 INFO SELECT table_name FROM "main_sensor_graph"
+15:43:23 INFO (psycopg2.errors.UndefinedTable) relation "main_sensor_graph" does not exist
+LINE 1: SELECT table_name FROM "main_sensor_graph"
+                               ^
+
+[SQL: SELECT table_name FROM "main_sensor_graph"]
+(Background on this error at: http://sqlalche.me/e/f405)
+15:43:23 INFO SELECT MIN (mycount) from (select distinct (COUNT(reading)) as mycount from "" WHERE in_log = 'True' AND serial_number LIKE 'FL-3KF%%' GROUP BY serial_number, test_date, test_type) AS "Dummy" 
+15:43:23 INFO (psycopg2.errors.SyntaxError) zero-length delimited identifier at or near """"
+LINE 1: ...(select distinct (COUNT(reading)) as mycount from "" WHERE i...
+                                                             ^
+
+[SQL: SELECT MIN (mycount) from (select distinct (COUNT(reading)) as mycount from "" WHERE in_log = 'True' AND serial_number LIKE 'FL-3KF%%' GROUP BY serial_number, test_date, test_type) AS "Dummy" ]
+(Background on this error at: http://sqlalche.me/e/f405)
+15:43:23 INFO SELECT table_name FROM "main_vs_graph"
+15:43:23 INFO (psycopg2.errors.UndefinedTable) relation "main_vs_graph" does not exist
+LINE 1: SELECT table_name FROM "main_vs_graph"
+                               ^
+
+[SQL: SELECT table_name FROM "main_vs_graph"]
+(Background on this error at: http://sqlalche.me/e/f405)
+15:43:23 INFO select sensor_name from "sensor_to_unit" LIMIT 1 
+15:43:23 INFO SELECT DISTINCT (test_type) from "DISK13 187 Reported_Uncorrect "
+15:43:23 INFO SELECT table_name FROM "main_vs_graph"
+15:43:23 INFO (psycopg2.errors.UndefinedTable) relation "main_vs_graph" does not exist
+LINE 1: SELECT table_name FROM "main_vs_graph"
+                               ^
+
+[SQL: SELECT table_name FROM "main_vs_graph"]
+(Background on this error at: http://sqlalche.me/e/f405)
+15:43:24 INFO select sensor_name from "sensor_to_unit" LIMIT 1 
+15:43:24 INFO SELECT DISTINCT (test_type) from "DISK13 187 Reported_Uncorrect "
+15:43:24 INFO SELECT MIN(reading) FROM "DISK0 187 Reported_Uncorrect " WHERE serial_number LIKE 'FL-3KF%%' AND test_type = 'IQC'
+15:43:24 INFO SELECT MAX(reading) FROM "DISK0 187 Reported_Uncorrect " WHERE serial_number LIKE 'FL-3KF%%' AND test_type = 'IQC'
+15:43:24 INFO SELECT MIN(reading) FROM "DISK0 187 Reported_Uncorrect " WHERE serial_number LIKE 'FL-3KF%%' AND test_type = 'IQC'
+15:43:24 INFO SELECT MAX(reading) FROM "DISK0 187 Reported_Uncorrect " WHERE serial_number LIKE 'FL-3KF%%' AND test_type = 'IQC'
+15:43:46 INFO SELECT MIN(reading) FROM "" WHERE serial_number LIKE 'FG421F%%' AND test_type = 'IQC'
+15:43:46 INFO (psycopg2.errors.SyntaxError) zero-length delimited identifier at or near """"
+LINE 1: SELECT MIN(reading) FROM "" WHERE serial_number LIKE 'FG421F...
+                                 ^
+
+[SQL: SELECT MIN(reading) FROM "" WHERE serial_number LIKE 'FG421F%%' AND test_type = 'IQC']
+(Background on this error at: http://sqlalche.me/e/f405)
+15:43:46 INFO SELECT MAX(reading) FROM "" WHERE serial_number LIKE 'FG421F%%' AND test_type = 'IQC'
+15:43:46 INFO (psycopg2.errors.SyntaxError) zero-length delimited identifier at or near """"
+LINE 1: SELECT MAX(reading) FROM "" WHERE serial_number LIKE 'FG421F...
+                                 ^
+
+[SQL: SELECT MAX(reading) FROM "" WHERE serial_number LIKE 'FG421F%%' AND test_type = 'IQC']
+(Background on this error at: http://sqlalche.me/e/f405)
+15:43:46 INFO SELECT MIN(reading) FROM "ASIC[1-2] Throughput" WHERE serial_number LIKE 'FG421F%%' AND test_type = 'IQC'
+15:43:46 INFO SELECT MAX(reading) FROM "ASIC[1-2] Throughput" WHERE serial_number LIKE 'FG421F%%' AND test_type = 'IQC'
+15:43:46 INFO select sensor_name from "sensor_to_unit" LIMIT 1 
+15:43:46 INFO SELECT DISTINCT (test_type) from "CPU0 VCCIO IOUT"
+15:43:46 INFO SELECT MIN(reading) FROM "ASIC[1-2] Throughput" WHERE serial_number LIKE 'FG421F%%' AND test_type = ''
+15:43:46 INFO SELECT MAX(reading) FROM "ASIC[1-2] Throughput" WHERE serial_number LIKE 'FG421F%%' AND test_type = ''
+15:43:46 INFO SELECT MIN(reading) FROM "ASIC[1-2] Throughput" WHERE serial_number LIKE 'FG421F%%' AND test_type = 'ITS'
+15:43:46 INFO SELECT MAX(reading) FROM "ASIC[1-2] Throughput" WHERE serial_number LIKE 'FG421F%%' AND test_type = 'ITS'
+15:44:11 INFO SELECT MIN(reading) FROM "PS1 Temp 1" WHERE serial_number LIKE 'FG421F%%' AND test_type = 'ITS'
+15:44:11 INFO SELECT MAX(reading) FROM "PS1 Temp 1" WHERE serial_number LIKE 'FG421F%%' AND test_type = 'ITS'
+15:44:28 INFO SELECT MIN(reading) FROM "BCM0 Core Temp" WHERE serial_number LIKE 'FG421F%%' AND test_type = 'ITS'
+15:44:28 INFO SELECT MAX(reading) FROM "BCM0 Core Temp" WHERE serial_number LIKE 'FG421F%%' AND test_type = 'ITS'
+15:44:37 INFO SELECT to_regclass('"FG421F_BCM0 Core Temp_ITS_Customized"')
+15:44:37 INFO CREATE VIEW "FG421F_BCM0 Core Temp_ITS_Customized" AS SELECT "BCM0 Core Temp".serial_number,"BCM0 Core Temp".test_date, "BCM0 Core Temp".test_type, "BCM0 Core Temp".line_number ,"BCM0 Core Temp".alarm ,"BCM0 Core Temp".reading FROM "BCM0 Core Temp" WHERE "BCM0 Core Temp".reading IS NOT NULL AND "BCM0 Core Temp".test_date >= '1999-01-01 00:00:00' AND "BCM0 Core Temp".test_date <= '2020-09-04 23:59:59'AND "BCM0 Core Temp".test_type = 'ITS'AND "BCM0 Core Temp".serial_number LIKE 'FG421F%%'ORDER BY reading
+15:44:37 INFO SELECT to_regclass('"FG421F_BCM0 Core Temp_ITS_Customized"')
+15:44:37 INFO Main Sensor Interval: main_sensor_graph Table created
+15:44:37 INFO SELECT to_regclass('"FG421F_BCM0 Core Temp_ITS_Customized_graph"')
+15:44:37 INFO Sensor Interval: FG421F_BCM0 Core Temp_ITS_Customized_graph Table created
+15:44:37 INFO INSERT INTO "main_sensor_graph" (table_name, start_graph, end_graph, interval) VALUES ('FG421F_BCM0 Core Temp_ITS_Customized_graph',52.0, 62.0, 2.0);
+15:44:37 INFO SELECT start_graph FROM "main_sensor_graph" WHERE table_name = 'FG421F_BCM0 Core Temp_ITS_Customized_graph'
+15:44:37 INFO SELECT end_graph FROM "main_sensor_graph" WHERE table_name = 'FG421F_BCM0 Core Temp_ITS_Customized_graph'
+15:44:37 INFO SELECT interval FROM "main_sensor_graph" WHERE table_name = 'FG421F_BCM0 Core Temp_ITS_Customized_graph'
+15:44:37 INFO select COUNT (*) FROM "FG421F_BCM0 Core Temp_ITS_Customized" WHERE reading >= 52.0 AND reading < 54.0
+15:44:37 INFO INSERT INTO "FG421F_BCM0 Core Temp_ITS_Customized_graph" (interval, count, unit) VALUES ('52.0-54.0',94,'degrees C');
+15:44:37 INFO select COUNT (*) FROM "FG421F_BCM0 Core Temp_ITS_Customized" WHERE reading >= 54.0 AND reading < 56.0
+15:44:37 INFO INSERT INTO "FG421F_BCM0 Core Temp_ITS_Customized_graph" (interval, count, unit) VALUES ('54.0-56.0',269,'degrees C');
+15:44:37 INFO select COUNT (*) FROM "FG421F_BCM0 Core Temp_ITS_Customized" WHERE reading >= 56.0 AND reading < 58.0
+15:44:37 INFO INSERT INTO "FG421F_BCM0 Core Temp_ITS_Customized_graph" (interval, count, unit) VALUES ('56.0-58.0',92,'degrees C');
+15:44:37 INFO select COUNT (*) FROM "FG421F_BCM0 Core Temp_ITS_Customized" WHERE reading >= 58.0 AND reading < 60.0
+15:44:37 INFO INSERT INTO "FG421F_BCM0 Core Temp_ITS_Customized_graph" (interval, count, unit) VALUES ('58.0-60.0',13,'degrees C');
+15:44:37 INFO select COUNT (*) FROM "FG421F_BCM0 Core Temp_ITS_Customized" WHERE reading >= 60.0 AND reading < 62.0
+15:44:37 INFO INSERT INTO "FG421F_BCM0 Core Temp_ITS_Customized_graph" (interval, count, unit) VALUES ('60.0-62.0',6,'degrees C');
+15:44:37 INFO SELECT table_name FROM INFORMATION_SCHEMA.views WHERE table_schema = ANY (current_schemas(false));
+15:44:37 INFO SELECT table_name FROM "main_sensor_graph"
+15:44:37 INFO SELECT table_name FROM "main_sensor_graph"
+15:44:38 INFO SELECT table_name FROM "main_sensor_graph"
+15:44:38 INFO SELECT to_regclass('"FG421F_BCM0 Core Temp_ITS_Customized_graph"')
+15:44:56 INFO SELECT "FG421F_BCM0 Core Temp_ITS_Customized_graph".interval,"FG421F_BCM0 Core Temp_ITS_Customized_graph".count AS "FG421F_BCM0 Core Temp_ITS_Customized_graph_count","FG421F_BCM0 Core Temp_ITS_Customized_graph".unit from  "FG421F_BCM0 Core Temp_ITS_Customized_graph" ORDER BY SPLIT_PART("FG421F_BCM0 Core Temp_ITS_Customized_graph".interval,'-', 1) ::FLOAT
+15:44:57 INFO SELECT DISTINCT (unit) from "FG421F_BCM0 Core Temp_ITS_Customized_graph"
+15:44:57 INFO select SUM (count) FROM "FG421F_BCM0 Core Temp_ITS_Customized_graph" 
+15:44:57 INFO SELECT AVG(reading) FROM "FG421F_BCM0 Core Temp_ITS_Customized"
+15:44:57 INFO SELECT DISTINCT (unit) from "FG421F_BCM0 Core Temp_ITS_Customized_graph"
+15:45:05 INFO SELECT DISTINCT reading FROM "FG421F_BCM0 Core Temp_ITS_Customized" WHERE reading IS NOT NULL ORDER BY reading
+15:45:05 INFO SELECT AVG(reading) FROM "FG421F_BCM0 Core Temp_ITS_Customized"
+15:45:05 INFO SELECT DISTINCT (unit) from "FG421F_BCM0 Core Temp_ITS_Customized_graph"
+15:45:38 INFO SELECT "FG421F_BCM0 Core Temp_ITS_Customized_graph".interval,"FG421F_BCM0 Core Temp_ITS_Customized_graph".count AS "FG421F_BCM0 Core Temp_ITS_Customized_graph_count","FG421F_BCM0 Core Temp_ITS_Customized_graph".unit from  "FG421F_BCM0 Core Temp_ITS_Customized_graph" ORDER BY SPLIT_PART("FG421F_BCM0 Core Temp_ITS_Customized_graph".interval,'-', 1) ::FLOAT
+15:45:38 INFO SELECT DISTINCT (unit) from "FG421F_BCM0 Core Temp_ITS_Customized_graph"
+15:45:39 INFO select SUM (count) FROM "FG421F_BCM0 Core Temp_ITS_Customized_graph" 
+15:45:39 INFO SELECT AVG(reading) FROM "FG421F_BCM0 Core Temp_ITS_Customized"
+15:45:39 INFO SELECT DISTINCT (unit) from "FG421F_BCM0 Core Temp_ITS_Customized_graph"
+15:45:45 INFO SELECT DISTINCT reading FROM "FG421F_BCM0 Core Temp_ITS_Customized" WHERE reading IS NOT NULL ORDER BY reading
+15:45:46 INFO SELECT AVG(reading) FROM "FG421F_BCM0 Core Temp_ITS_Customized"
+15:45:46 INFO SELECT DISTINCT (unit) from "FG421F_BCM0 Core Temp_ITS_Customized_graph"
+15:49:05 INFO SELECT MIN(reading) FROM "PS1 Temp 1" WHERE serial_number LIKE 'FG421F%%' AND test_type = 'ITS'
+15:49:05 INFO SELECT MAX(reading) FROM "PS1 Temp 1" WHERE serial_number LIKE 'FG421F%%' AND test_type = 'ITS'
+15:49:14 INFO SELECT to_regclass('"FG421F_PS1 Temp 1_ITS_Customized"')
+15:49:14 INFO CREATE VIEW "FG421F_PS1 Temp 1_ITS_Customized" AS SELECT "PS1 Temp 1".serial_number,"PS1 Temp 1".test_date, "PS1 Temp 1".test_type, "PS1 Temp 1".line_number ,"PS1 Temp 1".alarm ,"PS1 Temp 1".reading FROM "PS1 Temp 1" WHERE "PS1 Temp 1".reading IS NOT NULL AND "PS1 Temp 1".test_date >= '1999-05-01 00:00:00' AND "PS1 Temp 1".test_date <= '2020-09-04 23:59:59'AND "PS1 Temp 1".test_type = 'ITS'AND "PS1 Temp 1".serial_number LIKE 'FG421F%%'ORDER BY reading
+15:49:14 INFO SELECT to_regclass('"FG421F_PS1 Temp 1_ITS_Customized"')
+15:49:14 WARNING Main Sensor Interval: main_sensor_graph Table already exists
+15:49:14 INFO SELECT to_regclass('"FG421F_PS1 Temp 1_ITS_Customized_graph"')
+15:49:14 INFO Sensor Interval: FG421F_PS1 Temp 1_ITS_Customized_graph Table created
+15:49:14 INFO INSERT INTO "main_sensor_graph" (table_name, start_graph, end_graph, interval) VALUES ('FG421F_PS1 Temp 1_ITS_Customized_graph',30.0, 70.0, 5.0);
+15:49:14 INFO SELECT start_graph FROM "main_sensor_graph" WHERE table_name = 'FG421F_PS1 Temp 1_ITS_Customized_graph'
+15:49:14 INFO SELECT end_graph FROM "main_sensor_graph" WHERE table_name = 'FG421F_PS1 Temp 1_ITS_Customized_graph'
+15:49:14 INFO SELECT interval FROM "main_sensor_graph" WHERE table_name = 'FG421F_PS1 Temp 1_ITS_Customized_graph'
+15:49:14 INFO select COUNT (*) FROM "FG421F_PS1 Temp 1_ITS_Customized" WHERE reading >= 30.0 AND reading < 35.0
+15:49:14 INFO INSERT INTO "FG421F_PS1 Temp 1_ITS_Customized_graph" (interval, count, unit) VALUES ('30.0-35.0',0,'degrees C');
+15:49:14 INFO select COUNT (*) FROM "FG421F_PS1 Temp 1_ITS_Customized" WHERE reading >= 35.0 AND reading < 40.0
+15:49:14 INFO INSERT INTO "FG421F_PS1 Temp 1_ITS_Customized_graph" (interval, count, unit) VALUES ('35.0-40.0',7,'degrees C');
+15:49:14 INFO select COUNT (*) FROM "FG421F_PS1 Temp 1_ITS_Customized" WHERE reading >= 40.0 AND reading < 45.0
+15:49:14 INFO INSERT INTO "FG421F_PS1 Temp 1_ITS_Customized_graph" (interval, count, unit) VALUES ('40.0-45.0',348,'degrees C');
+15:49:14 INFO select COUNT (*) FROM "FG421F_PS1 Temp 1_ITS_Customized" WHERE reading >= 45.0 AND reading < 50.0
+15:49:14 INFO INSERT INTO "FG421F_PS1 Temp 1_ITS_Customized_graph" (interval, count, unit) VALUES ('45.0-50.0',54,'degrees C');
+15:49:14 INFO select COUNT (*) FROM "FG421F_PS1 Temp 1_ITS_Customized" WHERE reading >= 50.0 AND reading < 55.0
+15:49:14 INFO INSERT INTO "FG421F_PS1 Temp 1_ITS_Customized_graph" (interval, count, unit) VALUES ('50.0-55.0',0,'degrees C');
+15:49:14 INFO select COUNT (*) FROM "FG421F_PS1 Temp 1_ITS_Customized" WHERE reading >= 55.0 AND reading < 60.0
+15:49:14 INFO INSERT INTO "FG421F_PS1 Temp 1_ITS_Customized_graph" (interval, count, unit) VALUES ('55.0-60.0',2,'degrees C');
+15:49:14 INFO select COUNT (*) FROM "FG421F_PS1 Temp 1_ITS_Customized" WHERE reading >= 60.0 AND reading < 65.0
+15:49:14 INFO INSERT INTO "FG421F_PS1 Temp 1_ITS_Customized_graph" (interval, count, unit) VALUES ('60.0-65.0',0,'degrees C');
+15:49:14 INFO select COUNT (*) FROM "FG421F_PS1 Temp 1_ITS_Customized" WHERE reading >= 65.0 AND reading < 70.0
+15:49:14 INFO INSERT INTO "FG421F_PS1 Temp 1_ITS_Customized_graph" (interval, count, unit) VALUES ('65.0-70.0',0,'degrees C');
+15:49:14 INFO SELECT table_name FROM INFORMATION_SCHEMA.views WHERE table_schema = ANY (current_schemas(false));
+15:49:14 INFO SELECT table_name FROM "main_sensor_graph"
+15:49:14 INFO SELECT table_name FROM "main_sensor_graph"
+15:49:14 INFO SELECT to_regclass('"FG421F_PS1 Temp 1_ITS_Customized_graph"')
+15:49:27 INFO SELECT MIN(reading) FROM "BCM0 Core Temp" WHERE serial_number LIKE 'FG421F%%' AND test_type = 'ITS'
+15:49:27 INFO SELECT MAX(reading) FROM "BCM0 Core Temp" WHERE serial_number LIKE 'FG421F%%' AND test_type = 'ITS'
+15:49:32 INFO SELECT to_regclass('"FG421F_BCM0 Core Temp_ITS_Customized"')
+15:49:32 INFO DROP VIEW "FG421F_BCM0 Core Temp_ITS_Customized";
+15:49:32 INFO CREATE VIEW "FG421F_BCM0 Core Temp_ITS_Customized" AS SELECT "BCM0 Core Temp".serial_number,"BCM0 Core Temp".test_date, "BCM0 Core Temp".test_type, "BCM0 Core Temp".line_number ,"BCM0 Core Temp".alarm ,"BCM0 Core Temp".reading FROM "BCM0 Core Temp" WHERE "BCM0 Core Temp".reading IS NOT NULL AND "BCM0 Core Temp".test_date >= '1999-05-01 00:00:00' AND "BCM0 Core Temp".test_date <= '2020-09-04 23:59:59'AND "BCM0 Core Temp".test_type = 'ITS'AND "BCM0 Core Temp".serial_number LIKE 'FG421F%%'ORDER BY reading
+15:49:32 INFO SELECT to_regclass('"FG421F_BCM0 Core Temp_ITS_Customized"')
+15:49:32 WARNING Main Sensor Interval: main_sensor_graph Table already exists
+15:49:32 INFO SELECT to_regclass('"FG421F_BCM0 Core Temp_ITS_Customized_graph"')
+15:49:33 INFO DROP TABLE "FG421F_BCM0 Core Temp_ITS_Customized_graph";
+15:49:33 INFO Sensor Interval: FG421F_BCM0 Core Temp_ITS_Customized_graph Table created
+15:49:33 INFO UPDATE "main_sensor_graph" set start_graph=30.0, end_graph=70.0, interval=5.0 WHERE table_name = 'FG421F_BCM0 Core Temp_ITS_Customized_graph';
+15:49:33 INFO SELECT start_graph FROM "main_sensor_graph" WHERE table_name = 'FG421F_BCM0 Core Temp_ITS_Customized_graph'
+15:49:33 INFO SELECT end_graph FROM "main_sensor_graph" WHERE table_name = 'FG421F_BCM0 Core Temp_ITS_Customized_graph'
+15:49:33 INFO SELECT interval FROM "main_sensor_graph" WHERE table_name = 'FG421F_BCM0 Core Temp_ITS_Customized_graph'
+15:49:33 INFO select COUNT (*) FROM "FG421F_BCM0 Core Temp_ITS_Customized" WHERE reading >= 30.0 AND reading < 35.0
+15:49:33 INFO INSERT INTO "FG421F_BCM0 Core Temp_ITS_Customized_graph" (interval, count, unit) VALUES ('30.0-35.0',0,'degrees C');
+15:49:33 INFO select COUNT (*) FROM "FG421F_BCM0 Core Temp_ITS_Customized" WHERE reading >= 35.0 AND reading < 40.0
+15:49:33 INFO INSERT INTO "FG421F_BCM0 Core Temp_ITS_Customized_graph" (interval, count, unit) VALUES ('35.0-40.0',0,'degrees C');
+15:49:33 INFO select COUNT (*) FROM "FG421F_BCM0 Core Temp_ITS_Customized" WHERE reading >= 40.0 AND reading < 45.0
+15:49:33 INFO INSERT INTO "FG421F_BCM0 Core Temp_ITS_Customized_graph" (interval, count, unit) VALUES ('40.0-45.0',0,'degrees C');
+15:49:33 INFO select COUNT (*) FROM "FG421F_BCM0 Core Temp_ITS_Customized" WHERE reading >= 45.0 AND reading < 50.0
+15:49:33 INFO INSERT INTO "FG421F_BCM0 Core Temp_ITS_Customized_graph" (interval, count, unit) VALUES ('45.0-50.0',0,'degrees C');
+15:49:33 INFO select COUNT (*) FROM "FG421F_BCM0 Core Temp_ITS_Customized" WHERE reading >= 50.0 AND reading < 55.0
+15:49:33 INFO INSERT INTO "FG421F_BCM0 Core Temp_ITS_Customized_graph" (interval, count, unit) VALUES ('50.0-55.0',210,'degrees C');
+15:49:33 INFO select COUNT (*) FROM "FG421F_BCM0 Core Temp_ITS_Customized" WHERE reading >= 55.0 AND reading < 60.0
+15:49:33 INFO INSERT INTO "FG421F_BCM0 Core Temp_ITS_Customized_graph" (interval, count, unit) VALUES ('55.0-60.0',258,'degrees C');
+15:49:33 INFO select COUNT (*) FROM "FG421F_BCM0 Core Temp_ITS_Customized" WHERE reading >= 60.0 AND reading < 65.0
+15:49:33 INFO INSERT INTO "FG421F_BCM0 Core Temp_ITS_Customized_graph" (interval, count, unit) VALUES ('60.0-65.0',8,'degrees C');
+15:49:33 INFO select COUNT (*) FROM "FG421F_BCM0 Core Temp_ITS_Customized" WHERE reading >= 65.0 AND reading < 70.0
+15:49:33 INFO INSERT INTO "FG421F_BCM0 Core Temp_ITS_Customized_graph" (interval, count, unit) VALUES ('65.0-70.0',0,'degrees C');
+15:49:33 INFO SELECT table_name FROM INFORMATION_SCHEMA.views WHERE table_schema = ANY (current_schemas(false));
+15:49:33 INFO SELECT table_name FROM "main_sensor_graph"
+15:49:33 INFO SELECT table_name FROM "main_sensor_graph"
+15:49:33 INFO SELECT to_regclass('"FG421F_BCM0 Core Temp_ITS_Customized_graph"')
+15:49:48 INFO SELECT DISTINCT (unit) from "FG421F_PS1 Temp 1_ITS_Customized_graph"
+15:49:48 INFO SELECT DISTINCT (unit) from "FG421F_BCM0 Core Temp_ITS_Customized_graph"
+15:49:48 INFO SELECT DISTINCT (unit) from "FG421F_BCM0 Core Temp_ITS_Customized_graph"
+15:49:48 INFO SELECT interval FROM "FG421F_PS1 Temp 1_ITS_Customized_graph"
+15:49:48 INFO SELECT interval FROM "FG421F_BCM0 Core Temp_ITS_Customized_graph"
+15:49:49 INFO SELECT "FG421F_PS1 Temp 1_ITS_Customized_graph".interval,"FG421F_PS1 Temp 1_ITS_Customized_graph".count AS "FG421F_PS1 Temp 1_ITS_Customized_graph_count","FG421F_PS1 Temp 1_ITS_Customized_graph".unit from  "FG421F_PS1 Temp 1_ITS_Customized_graph" ORDER BY SPLIT_PART("FG421F_PS1 Temp 1_ITS_Customized_graph".interval,'-', 1) ::FLOAT
+15:49:49 INFO SELECT "FG421F_BCM0 Core Temp_ITS_Customized_graph".interval,"FG421F_BCM0 Core Temp_ITS_Customized_graph".count AS "FG421F_BCM0 Core Temp_ITS_Customized_graph_count","FG421F_BCM0 Core Temp_ITS_Customized_graph".unit from  "FG421F_BCM0 Core Temp_ITS_Customized_graph" ORDER BY SPLIT_PART("FG421F_BCM0 Core Temp_ITS_Customized_graph".interval,'-', 1) ::FLOAT
+15:49:49 INFO SELECT DISTINCT (unit) from "FG421F_PS1 Temp 1_ITS_Customized_graph"
+15:49:50 INFO select SUM (count) FROM "FG421F_PS1 Temp 1_ITS_Customized_graph" 
+15:49:50 INFO SELECT AVG(reading) FROM "FG421F_PS1 Temp 1_ITS_Customized"
+15:49:50 INFO select SUM (count) FROM "FG421F_BCM0 Core Temp_ITS_Customized_graph" 
+15:49:50 INFO SELECT AVG(reading) FROM "FG421F_BCM0 Core Temp_ITS_Customized"
+15:49:50 INFO SELECT DISTINCT (unit) from "FG421F_PS1 Temp 1_ITS_Customized_graph"
+15:49:58 INFO SELECT DISTINCT (unit) from "FG421F_PS1 Temp 1_ITS_Customized_graph"
+15:49:59 INFO SELECT DISTINCT (unit) from "FG421F_BCM0 Core Temp_ITS_Customized_graph"
+15:49:59 INFO SELECT DISTINCT (unit) from "FG421F_BCM0 Core Temp_ITS_Customized_graph"
+15:50:00 INFO SELECT DISTINCT reading FROM "FG421F_PS1 Temp 1_ITS_Customized" WHERE reading IS NOT NULL ORDER BY reading
+15:50:00 INFO SELECT AVG(reading) FROM "FG421F_PS1 Temp 1_ITS_Customized"
+15:50:00 INFO SELECT DISTINCT (unit) from "FG421F_PS1 Temp 1_ITS_Customized_graph"
+15:50:00 INFO SELECT DISTINCT reading FROM "FG421F_BCM0 Core Temp_ITS_Customized" WHERE reading IS NOT NULL ORDER BY reading
+15:50:00 INFO SELECT AVG(reading) FROM "FG421F_BCM0 Core Temp_ITS_Customized"
+15:59:15 INFO SELECT DISTINCT (unit) from "FG421F_PS1 Temp 1_ITS_Customized_graph"
+15:59:15 INFO SELECT DISTINCT (unit) from "FG421F_BCM0 Core Temp_ITS_Customized_graph"
+15:59:15 INFO SELECT DISTINCT (unit) from "FG421F_BCM0 Core Temp_ITS_Customized_graph"
+15:59:15 INFO SELECT interval FROM "FG421F_PS1 Temp 1_ITS_Customized_graph"
+15:59:16 INFO SELECT interval FROM "FG421F_BCM0 Core Temp_ITS_Customized_graph"
+15:59:17 INFO SELECT "FG421F_PS1 Temp 1_ITS_Customized_graph".interval,"FG421F_PS1 Temp 1_ITS_Customized_graph".count AS "FG421F_PS1 Temp 1_ITS_Customized_graph_count","FG421F_PS1 Temp 1_ITS_Customized_graph".unit from  "FG421F_PS1 Temp 1_ITS_Customized_graph" ORDER BY SPLIT_PART("FG421F_PS1 Temp 1_ITS_Customized_graph".interval,'-', 1) ::FLOAT
+15:59:17 INFO SELECT "FG421F_BCM0 Core Temp_ITS_Customized_graph".interval,"FG421F_BCM0 Core Temp_ITS_Customized_graph".count AS "FG421F_BCM0 Core Temp_ITS_Customized_graph_count","FG421F_BCM0 Core Temp_ITS_Customized_graph".unit from  "FG421F_BCM0 Core Temp_ITS_Customized_graph" ORDER BY SPLIT_PART("FG421F_BCM0 Core Temp_ITS_Customized_graph".interval,'-', 1) ::FLOAT
+15:59:17 INFO SELECT DISTINCT (unit) from "FG421F_PS1 Temp 1_ITS_Customized_graph"
+15:59:17 INFO select SUM (count) FROM "FG421F_PS1 Temp 1_ITS_Customized_graph" 
+15:59:17 INFO SELECT AVG(reading) FROM "FG421F_PS1 Temp 1_ITS_Customized"
+15:59:17 INFO select SUM (count) FROM "FG421F_BCM0 Core Temp_ITS_Customized_graph" 
+15:59:17 INFO SELECT AVG(reading) FROM "FG421F_BCM0 Core Temp_ITS_Customized"
+15:59:18 INFO SELECT DISTINCT (unit) from "FG421F_PS1 Temp 1_ITS_Customized_graph"
+16:04:14 INFO SELECT DISTINCT (unit) from "FG421F_PS1 Temp 1_ITS_Customized_graph"
+16:04:14 INFO SELECT DISTINCT (unit) from "FG421F_BCM0 Core Temp_ITS_Customized_graph"
+16:04:14 INFO SELECT DISTINCT (unit) from "FG421F_BCM0 Core Temp_ITS_Customized_graph"
+16:04:15 INFO SELECT DISTINCT reading FROM "FG421F_PS1 Temp 1_ITS_Customized" WHERE reading IS NOT NULL ORDER BY reading
+16:04:16 INFO SELECT AVG(reading) FROM "FG421F_PS1 Temp 1_ITS_Customized"
+16:04:16 INFO SELECT DISTINCT (unit) from "FG421F_PS1 Temp 1_ITS_Customized_graph"
+16:04:16 INFO SELECT DISTINCT reading FROM "FG421F_BCM0 Core Temp_ITS_Customized" WHERE reading IS NOT NULL ORDER BY reading
+16:04:16 INFO SELECT AVG(reading) FROM "FG421F_BCM0 Core Temp_ITS_Customized"
